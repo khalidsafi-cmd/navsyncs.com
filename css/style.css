@@ -154,6 +154,7 @@
 
 .carousel-item {
     position: relative;
+    min-height: 100vh;
 }
 
 .carousel-item::after {
@@ -195,9 +196,18 @@
     transition: .8s;
 }
 
+/* adjusting carousel control for small screens */
+
+@media (max-width: 768px) {
+   .carousel-control-prev {
+    width: 3.5rem;
+    height: 3.5;
+   } 
+}  
+
 .carousel-control-next {
-    width: 3rem;
-    height: 4rem;
+    width: 90px;
+    height: 60px;
     position: absolute;
     top: 50%;
     right: 0;
@@ -210,6 +220,13 @@
     background: var(--bs-secondary);
     transition: .8s;
 }
+
+@media (max-width: 768px) {
+   .carousel-control-next {
+    width: 3.5rem;
+    height: 3.5;
+   } 
+}  
 
 .carousel-caption .carousel-content a button.carousel-content-btn1 {
     background: var(--bs-secondary);

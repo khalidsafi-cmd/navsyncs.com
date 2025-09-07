@@ -276,15 +276,6 @@
     opacity: 1;
 }
 
-/* Hiding the three dots on smaller screens */ 
-
-@media (max-width: 768px) {
-    .carousel-indicators {
-        display: none;
-        visibility: hidden;
-    }
-}
-
 @media (max-width: 992px) {
     .carousel-item {
         min-height: 500px;

@@ -682,7 +682,50 @@
     background: #26d48c;
 }
 
-/*** Contact End ***/
+/* Mobile Optimizations */
+@media (max-width: 768px) {
+    .contact-detail::before {
+        height: 40%;
+        border-radius: 5px;
+    }
+    
+    .contact-detail {
+        padding: 1.5rem !important;
+    }
+    
+    .contact-info-box {
+        margin-bottom: 1rem;
+    }
+    
+    #contact .text-primary {
+        font-size: 1rem;
+    }
+
+    .contact-info-box .btn-square {
+        width: 40px !important;
+        height: 40px !important;
+    }
+    
+    .contact-info-box i {
+        font-size: 1rem;
+    }
+    
+    .contact-map, 
+    .contact-form {
+        padding: 1.5rem !important;
+    }
+    
+    .contact-form input,
+    .contact-form textarea {
+        padding: 1rem !important;
+    }
+    
+    .contact-form button {
+        width: 100%;
+    }
+}
+
+/*** contact End ***/
 
 
 /*** Footer Start ***/

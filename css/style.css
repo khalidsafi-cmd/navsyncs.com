@@ -175,9 +175,24 @@
     z-index: 1;
 }
 
+@media (max-width: 768px){
+    .carousel-caption {
+        padding-top: 20%;
+        }
+    }
+
 .carousel-item p {
     max-width: 700px;
     margin: 0 auto 35px auto;
+}
+
+@media (max-width: 768px) {
+    .carousel-content {
+        text-align: center;
+        padding-bottom: 10%;
+        max-width: 800px;
+        margin: 0 auto;
+    }
 }
 
 .carousel-control-prev {

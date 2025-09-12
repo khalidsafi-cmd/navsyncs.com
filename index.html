@@ -9,14 +9,24 @@
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="IT support, network infrastructure, security solutions, device support, IT service desk, business IT services, home technology solutions" name="keywords">
         <meta content="NavSync Solutions delivers expert IT support and technology solutions tailored to homes and businesses. Our services include network infrastructure, security solutions, device support, and IT service desk." name="description">
+        <meta name="author" content="https://github.com/khalidsafi-cmd">
+        <meta name="apple-mobile-web-app-capable" content="yes">
 
-
-        <!-- Open Graph Meta Tags -->
-        <meta property="og:title" content="NavSync Solutions | IT Services & Solutions">
-        <meta property="og:description" content="Expert IT support for homes and businesses">
-        <meta property="og:image" content="img/og-image.jpg">
-        <meta property="og:url" content="https://www.navsyncs.com">
+        <!-- Open Graph / Facebook / LinkedIn -->
         <meta property="og:type" content="website">
+        <meta property="og:url" content="https://navsyncs.com/">
+        <meta property="og:title" content="NavSync Solutions - Reliable IT solutions for Homes and Businesses">
+        <meta property="og:description" content="NavSync Solutions delivers expert IT support and technology solutions tailored to homes and businesses. Our services include network infrastructure, security solutions, device support, and IT service desk.">
+        <meta property="og:image" content="https://navsyncs.com/img/social-media-preview.jpg">
+        <meta property="og:image:alt" content="Navsync Solutions logo with symbolism of campus, and navigation">
+        <meta property="og:site_name" content="NavSync Solutions">
+        <meta property="og:locale" content="en_US">
+        <meta property="og:image:width" content="1200">
+        <meta property="og:image:height" content="630">
+
+        <!-- Canonical URL -->
+        <link rel="canonical" href="https://navsyncs.com/">
+        <meta name="robots" content="index, follow">
 
         
         <!-- Google Web Fonts -->
@@ -52,6 +62,110 @@
 
         <!-- 6️⃣ Theme color for mobile address bar (Android Chrome, Windows) -->
         <meta name="theme-color" content="#0a74da">
+
+        <script type="application/ld+json">
+        {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+            "@type": "WebSite",
+            "@id": "https://navsyncs.com/#website",
+            "url": "https://navsyncs.com/",
+            "name": "NavSync Solutions",
+            "inLanguage": "en",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://navsyncs.com/?s={search_term_string}",
+                "query-input": "required name=search_term_string"
+            }
+            },
+            {
+            "@type": ["Organization", "ProfessionalService"],
+            "@id": "https://navsyncs.com/#org",
+            "name": "NavSync Solutions",
+            "url": "https://navsyncs.com/",
+            "description": "IT support and technology solutions for homes and businesses: network infrastructure, security systems, device support, and service desk.",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://navsyncs.com/img/logo.svg",
+                "width": 512,
+                "height": 512
+            },
+            "image": "https://navsyncs.com/img/social-media-preview.jpg",
+            "email": "info@navsyncs.com",
+            "areaServed": ["US-MD","US-DC","US-VA"],
+            "availableLanguage": ["en"],
+            "sameAs": [
+                "https://www.facebook.com/navsyncs",
+                "https://www.instagram.com/navsyncs",
+                "https://www.linkedin.com/company/navsyncs",
+                "https://x.com/navsyncs"
+            ],
+            "contactPoint": [
+                {
+                "@type": "ContactPoint",
+                "contactType": "customer support",
+                "email": "services@navsyncs.com",
+                "availableLanguage": ["en"],
+                "areaServed": ["US-MD","US-DC","US-VA"]
+                }
+            ],
+            "knowsAbout": [
+                "Network setup and optimization",
+                "Wi-Fi troubleshooting",
+                "Firewall and router configuration",
+                "CCTV installation",
+                "Endpoint protection",
+                "Microsoft 365 support",
+                "Backup and data recovery",
+                "IT service desk"
+            ],
+            "hasOfferCatalog": {
+                "@type": "OfferCatalog",
+                "name": "IT Services",
+                "itemListElement": [
+                {
+                    "@type": "OfferCatalog",
+                    "name": "Network Infrastructure",
+                    "itemListElement": [
+                    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Home & Office Network Setup" } },
+                    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Wi-Fi Optimization & Coverage" } },
+                    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Router/Firewall Configuration" } }
+                    ]
+                },
+                {
+                    "@type": "OfferCatalog",
+                    "name": "Security Solutions",
+                    "itemListElement": [
+                    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Endpoint Protection & Hardening" } },
+                    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "CCTV & Access Control Setup" } }
+                    ]
+                },
+                {
+                    "@type": "OfferCatalog",
+                    "name": "Device Support & Service Desk",
+                    "itemListElement": [
+                    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "PC/Mac Setup & Troubleshooting" } },
+                    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Microsoft 365 Support" } },
+                    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Backup & Data Recovery" } }
+                    ]
+                }
+                ]
+            }
+            },
+            {
+            "@type": "BreadcrumbList",
+            "@id": "https://navsyncs.com/#breadcrumbs",
+            "itemListElement": [
+                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://navsyncs.com/" },
+                { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://navsyncs.com/services/" },
+                { "@type": "ListItem", "position": 3, "name": "Contact", "item": "https://navsyncs.com/contact/" }
+            ]
+            }
+        ]
+        }
+        </script>
+
     </head>
 
     <!-- ! Add this to every future page -->
@@ -64,7 +178,6 @@
 
             gtag('config', 'G-C5NHSS3MST');
         </script>
-
     <body style="overflow-x: hidden;">
         <!-- Spinner Start -->
         <div id="spinner" class="show position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
@@ -99,7 +212,7 @@
             <div class="container">
                 <nav class="navbar navbar-dark navbar-expand-lg py-0">
                     <a href="index.html" class="navbar-brand">
-                        <h1 class="text-white fw-bold d-block">Nav<span class="text-secondary">SyncS</span> </h1>
+                        <a class="navbar-brand" href="index.html"><img src="img/Logo.svg" class="logo" /></a>
                     </a>
                     <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                         <span class="navbar-toggler-icon"></span>
@@ -108,30 +221,16 @@
                         <div class="navbar-nav ms-auto mx-xl-auto p-0">
                             <a href="index.html" class="nav-item nav-link active text-secondary">Home</a>
                             <a href="#about" class="nav-item nav-link">About</a>
-                     <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
-                            <div class="dropdown-menu rounded">
-                                <a href="404.html" class="dropdown-item">Network Infrastructure</a>
-                                <a href="404.html" class="dropdown-item">Security Solutions</a>
-                                <a href="404.html" class="dropdown-item">Device Support</a>
-                                <a href="404.html" class="dropdown-item">IT Service Desk</a>
-                            </div>
-                     </div>
-
-                     <!-- TODO change the project html structure, and make it look like the solutions we have provided to other customers-->
-                            <a href="#solutions" class="nav-item nav-link">Solutions</a>
-
-                     <!--? Maybe needed in future but not now-->       
-                            <!-- <div class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                        <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
                                 <div class="dropdown-menu rounded">
-                                    <a href="blog.html" class="dropdown-item">Our Blog</a>
-                                    <a href="team.html" class="dropdown-item">Our Team</a>
-                                    <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                                    <a href="404.html" class="dropdown-item">404 Page</a>
+                                    <a href="404.html" class="dropdown-item">Network Infrastructure</a>
+                                    <a href="404.html" class="dropdown-item">Security Solutions</a>
+                                    <a href="404.html" class="dropdown-item">Device Support</a>
+                                    <a href="404.html" class="dropdown-item">IT Service Desk</a>
                                 </div>
-                            </div> -->
-                            
+                        </div>
+                            <a href="#solutions" class="nav-item nav-link">Solutions</a>       
                             <a href="#contact" class="nav-item nav-link">Contact</a>
                         </div>
                     </div>

@@ -102,6 +102,15 @@
 
 
 /*** Navbar Start ***/
+
+/* Styles for logo */
+
+.logo {
+  width: 11rem;
+}
+
+/* logo end */
+
 .navbar .navbar-nav {
     padding: 15px 0;
 }

@@ -1,3 +1,38 @@
+:root {
+    /* Primary Colors (blues for brand identity) */
+    --bs-primary: #005a9c;        /* Strong medium blue */
+    --bs-primary-dark: #003f6f;   /* Deep navy for headers/navbars */
+    --bs-primary-light: #4a90c2;  /* Lighter accent blue */
+
+    /* Secondary Colors (teal for contrast/CTAs) */
+    --bs-secondary: #00897b;      /* Strong teal (great against blue) */
+    --bs-secondary-dark: #00695c; /* Dark teal for hover states */
+    --bs-secondary-light: #4db6ac;/* Softer teal accent */
+
+    /* Neutral Colors */
+    --bs-dark: #1c1c1c;           /* Almost black, ensures readability */
+    --bs-gray: #6c757d;           /* Accessible gray (body text) */
+    --bs-light: #f8f9fa;          /* Very light background */
+    --bs-white: #ffffff;          /* Pure white */
+
+    /* Additional Colors (semantic Bootstrap roles) */
+    --bs-success: #2e7d32;        /* Green with strong contrast */
+    --bs-info: #0288d1;           /* Bright sky blue */
+    --bs-warning: #fbc02d;        /* Golden yellow (alert, accessible) */
+    --bs-danger: #c62828;         /* Strong red for alerts/errors */
+}
+
+/* Override Bootstrap's default colors */
+.text-primary   { color: var(--bs-primary) !important; }
+.bg-primary     { background-color: var(--bs-primary) !important; }
+
+.text-secondary { color: var(--bs-secondary) !important; }
+.bg-secondary   { background-color: var(--bs-secondary) !important; }
+
+.text-dark      { color: var(--bs-dark) !important; }
+.bg-dark        { background-color: var(--bs-dark) !important; }
+
+
 /*** Spinner Start ***/
 
 #spinner {
@@ -106,7 +141,7 @@
 /* Styles for logo */
 
 .logo {
-  width: 11rem;
+  width: 13rem;
 }
 
 /* logo end */
@@ -374,8 +409,8 @@
     border-radius: 10px;
     padding: 10px 0;
     position: relative;
+    background-color: var(--bs-white);
 }
-
 
 .services-content::after {
     position: absolute;
@@ -384,15 +419,10 @@
     height: 0;
     top: 0;
     left: 0;
-    border-radius: 10px 10px 0 0;
-    background: rgba(3, 43, 243, 0.8);
+    border-radius: 10px;
+    background: var(--bs-primary);
+    opacity: 0.9;
     transition: .5s;
-}
-
-.services-content::after {
-    top: 0;
-    bottom: auto;
-    border-radius: 10px 10px 10px 10px;
 }
 
 .services-item:hover .services-content::after {
@@ -409,18 +439,16 @@
 .services-item .services-content-icon i,
 .services-item .services-content-icon p {
     transition: .5s;
+    color: var(--bs-dark);
 }
 
 .services-item:hover .services-content-icon i {
-    color: var(--bs-secondary) !important;
+    color: var(--bs-secondary) !important; /* teal accent */
 }
 
 .services-item:hover .services-content-icon p {
-    color: var(--bs-white);
+    color: var(--bs-white) !important; /* accessible against blue overlay */
 }
-
-/*** Services End ***/
-
 
 /*** Project Start ***/
 
@@ -677,18 +705,24 @@
     width: 100%;
     top: 0;
     left: 0;
-    background: linear-gradient(rgb(210, 243, 235, 1), rgba(230, 250, 245, .3)), url(../img/background.jpg) center center no-repeat;
+    background: linear-gradient(
+        rgba(0, 138, 123, 0.15), /* subtle teal overlay */
+        rgba(0, 90, 156, 0.25)   /* subtle blue overlay */
+    ),
+    url(../img/background.jpg) center center no-repeat;
     background-size: cover;
     border-radius: 10px;
     z-index: -1;
 }
 
 .contact-map {
-    background: #26d48c;
+    background: var(--bs-secondary); /* teal */
+    color: var(--bs-white);          /* ensure readability */
 }
 
 .contact-form {
-    background: #26d48c;
+    background: var(--bs-secondary); /* teal */
+    color: var(--bs-white);          /* ensure readability */
 }
 
 /* Mobile Optimizations */

@@ -32,6 +32,14 @@
 .text-dark      { color: var(--bs-dark) !important; }
 .bg-dark        { background-color: var(--bs-dark) !important; }
 
+.btn-secondary {
+    background-color: var(--bs-secondary);
+}
+
+.btn-secondary:hover {
+    background-color: var(--bs-secondary-light);
+}
+
 
 /*** Spinner Start ***/
 
@@ -152,8 +160,9 @@
 
 .navbar .navbar-nav .nav-link {
     padding: 10px;
-    color: var(--bs-white);
-    font-size: 18px;
+    color: var(--bs-primary);
+    font-size: 1.35rem;
+    font-weight: bolder;
     outline: none;
     
 }
@@ -208,7 +217,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    background: rgba(0, 0, 0, .6);
+    background: rgba(0, 0, 0, .45);
 }
 
 .carousel-caption {
@@ -324,14 +333,14 @@
 #carouselId .carousel-indicators li {
     width: 30px;
     height: 10px;
-    background: var(--bs-primary);
+    background: var(--bs-white);
     margin: 10px;
     border-radius: 30px;
     opacity: 1;
 }
 
 #carouselId .carousel-indicators li:hover {
-    background: var(--bs-secondary);
+    background: var(--bs-primary);
     opacity: 1;
 }
 
@@ -399,6 +408,10 @@
 
 /*** Carousel End ***/
 
+.facts {
+    background-color: var(--bs-secondary-light);
+}
+
 
 /*** Services Start ***/
 
@@ -443,10 +456,11 @@
 }
 
 .services-item:hover .services-content-icon i {
-    color: var(--bs-secondary) !important; /* teal accent */
+    color: var(--bs-secondary) !important; 
 }
 
-.services-item:hover .services-content-icon p {
+
+.services-item:hover .services-content-icon p,h4 {
     color: var(--bs-white) !important; /* accessible against blue overlay */
 }
 

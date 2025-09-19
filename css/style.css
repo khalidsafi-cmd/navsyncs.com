@@ -459,9 +459,16 @@
     color: var(--bs-secondary) !important; 
 }
 
+.services-item h4 {
+    color: var(--bs-primary) !important; 
+}
 
-.services-item:hover .services-content-icon p,h4 {
-    color: var(--bs-white) !important; /* accessible against blue overlay */
+.services-item:hover h4 {
+    color: var(--bs-white) !important; 
+}
+
+.services-item:hover .services-content-icon p {
+    color: var(--bs-white) !important; 
 }
 
 /*** Project Start ***/
@@ -712,10 +719,11 @@
 
 
 /*** Contact Start ***/
+
 .contact-detail::before {
     position: absolute;
     content: "";
-    height: 50%;
+    height: 100%;
     width: 100%;
     top: 0;
     left: 0;
@@ -735,14 +743,14 @@
 }
 
 .contact-form {
-    background: var(--bs-secondary); /* teal */
-    color: var(--bs-white);          /* ensure readability */
+    background: var(--bs-secondary); 
+    color: var(--bs-white);          
 }
 
 /* Mobile Optimizations */
 @media (max-width: 768px) {
     .contact-detail::before {
-        height: 40%;
+        height: 100%;
         border-radius: 5px;
     }
     
@@ -778,7 +786,7 @@
     }
     
     .contact-form button {
-        width: 100%;
+        width: 10%;
     }
 }
 
@@ -786,6 +794,17 @@
 
 
 /*** Footer Start ***/
+#footer {
+    background-color: whitesmoke;
+}
+
+.short-link {
+    color: var(--bs-primary) !important;
+}
+
+.quicklinks {
+    color: var(--bs-primary) !important;
+}
 
 .footer .short-link a,
 .footer .help-link a,

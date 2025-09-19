@@ -514,7 +514,7 @@
 .project-content a {
     display: inline-block;
     padding: 20px 25px;
-    background: var(--bs-primary);
+    background: var(--bs-white);
     border-radius: 10px;
 }
 

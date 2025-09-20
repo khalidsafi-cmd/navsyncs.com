@@ -228,12 +228,6 @@
     z-index: 1;
 }
 
-@media (max-width: 768px){
-    .carousel-caption {
-        padding-top: 20%;
-        }
-    }
-
 .carousel-item p {
     max-width: 700px;
     margin: 0 auto 35px auto;
@@ -338,6 +332,19 @@
 } 
 }
 
+@media (max-width: 992px) {
+   .carousel-content-btn1, .carousel-content-btn2{
+    max-width: 200px;
+} 
+}
+
+/** indicators **/
+#carouselId .carousel-indicators li.active {
+    background: var(--bs-secondary) !important;
+    transform: scale(1.2);
+    transition: all 0.3s ease;
+    opacity: 1; 
+}
 
 #carouselId .carousel-indicators li {
     width: 30px;
@@ -346,6 +353,8 @@
     margin: 10px;
     border-radius: 30px;
     opacity: 1;
+    transition: all 0.3s ease;
+    transform: scale(1);
 }
 
 #carouselId .carousel-indicators li:hover {
@@ -355,20 +364,13 @@
 
 /* Hiding the three dots on smaller screens */ 
 
-@media (max-width: 768px) {
-    .carousel-indicators {
-        display: none;
-        visibility: hidden;
-    }
-}
-
 @media (max-width: 992px) {
     .carousel-item {
-        min-height: 500px;
+        min-height: 80vh;
     }
     
     .carousel-item img {
-        min-height: 500px;
+        min-height: 80vh;
         object-fit: cover;
     }
 
@@ -383,20 +385,21 @@
 
 @media (max-width: 768px) {
     .carousel-item {
-        min-height: 400px;
+        min-height: 70vh;
     }
     
     .carousel-item img {
-        min-height: 400px;
+        min-height: 70vh;
         object-fit: cover;
+        object-position: 75% center;
     }
 
     .carousel-item h1 {
-        font-size: 28px !important;
+        font-size: 2rem !important;
     }
 
     .carousel-item p {
-        font-size: 14px !important;
+        font-size: 1.2rem !important;
     }
 }
 
@@ -417,9 +420,14 @@
 
 /*** Carousel End ***/
 
-.facts {
-    background-color: var(--bs-secondary-light);
-}
+
+/** Fact start **/
+
+        .facts {
+            background: var(--bs-secondary-light);
+            color: white;
+            padding: 40px 5px !important;
+        }
 
 
 /*** Services Start ***/

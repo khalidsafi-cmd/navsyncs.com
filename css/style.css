@@ -299,6 +299,7 @@
 .carousel-caption .carousel-content a button.carousel-content-btn1 {
     background: var(--bs-secondary);
     color: var(--bs-dark);
+    width: 250px;
     opacity: 1;
     border: 0;
     border-radius: 20px;
@@ -316,6 +317,7 @@
 .carousel-caption .carousel-content a button.carousel-content-btn2 {
     background: var(--bs-primary);
     color: var(--bs-white);
+    width: 250px; 
     opacity: 1;
     border: 0;
     border-radius: 20px;
@@ -329,6 +331,13 @@
     transition: 1s;
     border-radius: 20px;
 }
+
+@media (max-width: 768px) {
+   .carousel-content-btn1, .carousel-content-btn2{
+    max-width: 200px;
+} 
+}
+
 
 #carouselId .carousel-indicators li {
     width: 30px;

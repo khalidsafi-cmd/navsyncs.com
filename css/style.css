@@ -364,26 +364,8 @@
 
 /* Hiding the three dots on smaller screens */ 
 
-@media (max-width: 992px) {
-    .carousel-item {
-        min-height: 80vh;
-    }
-    
-    .carousel-item img {
-        min-height: 80vh;
-        object-fit: cover;
-    }
-
-    .carousel-item h1 {
-        font-size: 40px !important;
-    }
-
-    .carousel-item p {
-        font-size: 16px !important;
-    }
-}
-
-@media (max-width: 768px) {
+/* Tablets: 769px to 992px */
+@media (min-width: 769px) and (max-width: 992px) {
     .carousel-item {
         min-height: 70vh;
     }
@@ -393,13 +375,59 @@
         object-fit: cover;
         object-position: 75% center;
     }
-
+    
     .carousel-item h1 {
-        font-size: 2rem !important;
+        font-size: 2.5rem !important;
     }
-
+    
     .carousel-item p {
-        font-size: 1.2rem !important;
+        font-size: 1.6rem !important;
+    }
+}
+
+/* Large phones: 481px to 768px (iPhone 12 Pro Max, etc.) */
+@media (min-width: 481px) and (max-width: 768px) {
+    .carousel-item {
+        min-height: 70vh;
+    }
+    
+    .carousel-item img {
+        min-height: 70vh;
+        object-fit: cover;
+        object-position: 75% center;
+    }
+    
+    .carousel-item h1 {
+        font-size: 2.2rem !important; /* Larger for big phones */
+    }
+    
+    .carousel-item p {
+        font-size: 1.4rem !important; /* Larger for big phones */
+    }
+}
+
+/* Small phones: up to 480px */
+@media (max-width: 480px) {
+    .carousel-item {
+        min-height: 75vh;
+    }
+    
+    .carousel-caption {
+        padding-top: 10%;
+    }
+    
+    .carousel-item img {
+        min-height: 75vh;
+        object-fit: cover;
+        object-position: 75% center;
+    }
+    
+    .carousel-item h1 {
+        font-size: 1.5rem !important;
+    }
+    
+    .carousel-item p {
+        font-size: 1.1rem !important;
     }
 }
 

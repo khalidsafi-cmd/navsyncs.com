@@ -207,7 +207,7 @@
 
 .carousel-item {
     position: relative;
-    min-height: 100vh;
+    max-height: 100vh;
 }
 
 .carousel-item::after {
@@ -237,7 +237,7 @@
     .carousel-content {
         text-align: center;
         padding-bottom: 10%;
-        max-width: 800px;
+        max-width: 80vw;
         margin: 0 auto;
     }
 }
@@ -282,13 +282,6 @@
     background: var(--bs-secondary);
     transition: .8s;
 }
-
-@media (max-width: 768px) {
-   .carousel-control-next {
-    width: 3.5rem;
-    height: 3.5;
-   } 
-}  
 
 .carousel-caption .carousel-content a button.carousel-content-btn1 {
     background: var(--bs-secondary);
@@ -338,6 +331,25 @@
 } 
 }
 
+@media (max-width: 768px) {
+    .carousel-content a {
+        display: block;
+        margin: 0 auto 15px auto; /* 15px space between stacked buttons */
+        width: fit-content;
+    }
+    
+    /* Remove bottom margin from last button */
+    .carousel-content a:last-child {
+        margin-bottom: 0;
+    }
+    
+    .carousel-content-btn1, 
+    .carousel-content-btn2 {
+        max-width: 200px;
+        width: 100%;
+    }
+}
+
 /** indicators **/
 #carouselId .carousel-indicators li.active {
     background: var(--bs-secondary) !important;
@@ -352,7 +364,7 @@
     background: var(--bs-white);
     margin: 10px;
     border-radius: 30px;
-    opacity: 1;
+    opacity: 0.6;
     transition: all 0.3s ease;
     transform: scale(1);
 }
@@ -404,10 +416,30 @@
     .carousel-item p {
         font-size: 1.4rem !important; /* Larger for big phones */
     }
+
+    .carousel-control-next, .carousel-control-prev {
+        display: none;
+    }
+    .carousel-content {
+        text-align: center;
+        max-width: 80vw;
+        margin: 0 auto;
+    }
 }
 
 /* Small phones: up to 480px */
 @media (max-width: 480px) {
+    .carousel-content {
+        text-align: center;
+        padding-bottom: 10%;
+        max-width: 80vw;
+        margin: 0 auto;
+    }
+
+    .carousel-control-next, .carousel-control-prev {
+        display: none;
+    }
+
     .carousel-item {
         min-height: 75vh;
     }
@@ -423,7 +455,7 @@
     }
     
     .carousel-item h1 {
-        font-size: 1.5rem !important;
+        font-size: 1.2rem !important;
     }
     
     .carousel-item p {

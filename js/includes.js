@@ -23,3 +23,14 @@ document.addEventListener('DOMContentLoaded', () => {
   loadHTML('footer-container', '/includes/footer.html');
   requestAnimationFrame(initLoadedContent);
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const currentPage = window.location.pathname.split("/").pop(); 
+  const links = document.querySelectorAll(".navbar-nav .nav-link");
+
+  links.forEach(link => {
+    if (link.getAttribute("href") === currentPage) {
+      link.classList.add("active", "text-secondary");
+    }
+  });
+});

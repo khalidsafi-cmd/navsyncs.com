@@ -63,6 +63,12 @@
         <!-- 6️⃣ Theme color for mobile address bar (Android Chrome, Windows) -->
         <meta name="theme-color" content="#0a74da">
 
+        <!-- Prefetching these items so it does not take long time to load -->
+        <link rel="prefetch" href="/includes/navbar.html" as="fetch" crossorigin="anonymous">
+        <link rel="prefetch" href="/includes/footer.html" as="fetch" crossorigin="anonymous">
+        <link rel="prefetch" href="/services.html">
+
+
         <script type="application/ld+json">
         {
         "@context": "https://schema.org",
@@ -167,6 +173,14 @@
         </script>
 
     </head>
+
+    <!--This is also for prefetching the items in the service page -->
+        <script>
+        (cb => ('requestIdleCallback' in window) ? requestIdleCallback(cb, {timeout:2000}) : setTimeout(cb, 0))(() => {
+            ['/includes/navbar.html','/includes/footer.html','/services.html']
+            .forEach(url => fetch(url, {credentials:'same-origin'}).catch(()=>{}));
+        });
+        </script>
 
     <!-- ! Add this to every future page -->
         <!-- Google tag (gtag.js) -->

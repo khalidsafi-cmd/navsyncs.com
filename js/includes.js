@@ -1,36 +1,25 @@
-
-async function loadHTML(elId, filePath) {
-  const el = document.getElementById(elId);
-  if (!el) return;                        // 1) Skip if container not on this page
+// /js/includes.js
+async function loadHTML(id, path) {
+  const el = document.getElementById(id);
+  if (!el) return; // skip if container not on this page
   try {
-    const res = await fetch(filePath, { cache: 'force-cache' }); // 2) Use cache
+    const res = await fetch(path, { cache: 'force-cache' });
     if (!res.ok) throw new Error(res.status);
     el.innerHTML = await res.text();
   } catch (e) {
-    // 3) Fail soft: don't block page
-    console.warn(`Include failed: ${filePath}`, e);
+    console.warn('Include failed:', path, e);
   }
 }
 
 function initLoadedContent() {
-  if (typeof bootstrap !== 'undefined') {
+  if (window.bootstrap) {
     document.querySelectorAll('.dropdown-toggle').forEach(d => new bootstrap.Dropdown(d));
   }
-  setActiveNavigation?.();
-}   
-
-function setActiveNavigation() {
-  const page = location.pathname.replace(/\/$/, '') || '/';
-  document.querySelectorAll('.nav-link').forEach(a => {
-    a.classList.toggle('active', a.getAttribute('href')?.replace(/#.*$/, '') === page);
-  });
 }
 
-// 4) Never gate the spinner on includes; do includes async
 document.addEventListener('DOMContentLoaded', () => {
-  // Fire-and-forget; don't await
+  // fire-and-forget; don't await
   loadHTML('navbar-container', '/includes/navbar.html');
   loadHTML('footer-container', '/includes/footer.html');
-  // Light re-init after next frame
   requestAnimationFrame(initLoadedContent);
 });

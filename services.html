@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Services | NavSync Solutions</title>
+
+  <!-- Meta -->
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta name="description" content="Explore NavSync Solutions services: Network Infrastructure, Security Solutions, Device Support, IT Service Desk, Business Solutions, and Home Technology." />
+  <link rel="canonical" href="https://navsyncs.com/services.html" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Saira:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+
+  <!-- Libs -->
+  <link href="lib/animate/animate.min.css" rel="stylesheet" />
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
+  <!-- CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
+
+  <!-- Favicons (optional keep same as index) -->
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg" />
+
+  <!-- JSON-LD (Breadcrumbs consistent with your site) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Home","item":"https://navsyncs.com/"},
+      {"@type":"ListItem","position":2,"name":"Services","item":"https://navsyncs.com/services.html"}
+    ]
+  }
+  </script>
+
+  <!-- Page-specific CSS (additions on top of your existing CSS) -->
+  <style>
+    /* Header image + overlay reuse */
+    .page-header {
+      background: linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)), url(img/carousel-1.webp) center/cover no-repeat;
+    }
+
+    /* Services TOC (sticky) */
+    .services-toc {
+      position: sticky;
+      top: 90px;
+      background: var(--bs-light);
+      border: 1px solid #e9ecef;
+      border-radius: 10px;
+      padding: 1rem;
+    }
+    .services-toc a {
+      display: block;
+      padding: .35rem .25rem;
+      font-weight: 600;
+      color: var(--bs-primary);
+      text-decoration: none;
+    }
+    .services-toc a:hover { color: var(--bs-secondary); }
+
+    /* Section cards */
+    .svc-card {
+      background: var(--bs-white);
+      border-radius: 12px;
+      box-shadow: 0 8px 30px rgba(0,0,0,.08);
+      overflow: hidden;
+      height: 100%;
+    }
+    .svc-card .svc-head {
+      background: linear-gradient(135deg, var(--bs-primary), var(--bs-primary-light));
+      color: var(--bs-white);
+      padding: 1.25rem 1.25rem;
+      display: flex; gap: .75rem; align-items: center;
+    }
+    .svc-card .svc-head i { font-size: 2rem; }
+    .svc-card .svc-body { padding: 1.25rem; }
+    .svc-card .svc-body ul { margin: 0; padding-left: 1.2rem; }
+    .svc-card .svc-body li { margin-bottom: .4rem; }
+
+    /* CTA band */
+    .cta-band {
+      background: linear-gradient(135deg, var(--bs-secondary), var(--bs-secondary-light));
+      color: var(--bs-white);
+      border-radius: 14px;
+    }
+
+    /* Anchor offset for fixed nav (smooth scroll feel) */
+    .svc-anchor { position: relative; scroll-margin-top: 90px; }
+  </style>
+</head>
+
+<body>
+  <!-- Spinner -->
+  <div id="spinner" class="show position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div class="spinner-grow text-primary" role="status"></div>
+  </div>
+
+  <!-- Navbar include -->
+  <nav id="navbar-container"></nav>
+
+  <!-- Page Header -->
+  <div class="container-fluid page-header py-5">
+    <div class="container text-center py-5">
+      <h1 class="display-4 text-white mb-3 animated slideInDown">Services</h1>
+      <nav aria-label="breadcrumb" class="animated slideInDown">
+        <ol class="breadcrumb justify-content-center mb-0">
+          <li class="breadcrumb-item"><a class="text-white-50" href="index.html">Home</a></li>
+          <li class="breadcrumb-item text-white active" aria-current="page">Services</li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Stats band (optional keep) -->
+  <div class="container-fluid bg-secondary py-5">
+    <div class="container">
+      <div class="row text-white g-4">
+        <div class="col-6 col-lg-3">
+          <div class="d-flex align-items-center">
+            <h2 class="me-3 text-white mb-0">100+</h2>
+            <p class="mb-0">Issues Resolved</p>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="d-flex align-items-center">
+            <h2 class="me-3 text-white mb-0">24/7</h2>
+            <p class="mb-0">Support Availability</p>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="d-flex align-items-center">
+            <h2 class="me-3 text-white mb-0">98%</h2>
+            <p class="mb-0">Satisfaction Rate</p>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="d-flex align-items-center">
+            <h2 class="me-3 text-white mb-0">1 hr</h2>
+            <p class="mb-0">Avg. Response Time</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Services content -->
+  <section class="container my-5">
+    <div class="row g-4">
+      <!-- TOC -->
+      <aside class="col-lg-3 d-none d-lg-block">
+        <div class="services-toc">
+          <div class="h6 text-dark mb-2">Browse services</div>
+          <a href="#network">Network Infrastructure</a>
+          <a href="#security">Security Solutions</a>
+          <a href="#devices">Device Support</a>
+          <a href="#service-desk">IT Service Desk</a>
+          <a href="#business">Business Solutions</a>
+          <a href="#home-tech">Home Technology</a>
+        </div>
+      </aside>
+
+      <!-- Main -->
+      <div class="col-lg-9">
+        <!-- Network -->
+        <div id="network" class="svc-anchor mb-4">
+          <div class="svc-card wow fadeIn" data-wow-delay=".1s">
+            <div class="svc-head">
+              <i class="fas fa-network-wired"></i>
+              <div>
+                <h3 class="h4 mb-0">Network Infrastructure</h3>
+                <small class="opacity-75">Design • Deployment • Optimization</small>
+              </div>
+            </div>
+            <div class="svc-body">
+              <p>Reliable wired and wireless networks tailored for offices, retail, and home offices—built for speed, stability, and scalability.</p>
+              <div class="row">
+                <div class="col-md-6">
+                  <ul>
+                    <li>LAN/WAN design & cabling</li>
+                    <li>Wi-Fi heat-mapping & coverage</li>
+                    <li>Router & firewall configuration</li>
+                    <li>VPN & remote access</li>
+                  </ul>
+                </div>
+                <div class="col-md-6">
+                  <ul>
+                    <li>QoS & VLAN segmentation</li>
+                    <li>Switching & PoE deployments</li>
+                    <li>Monitoring & performance tuning</li>
+                    <li>Documentation & handover</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="mt-3 d-flex gap-2">
+                <a href="#contact-cta" class="btn btn-secondary text-white rounded-pill px-4">Request a site survey</a>
+                <a href="index.html#services" class="btn btn-outline-primary rounded-pill px-4">Back to overview</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Security -->
+        <div id="security" class="svc-anchor mb-4">
+          <div class="svc-card wow fadeIn" data-wow-delay=".15s">
+            <div class="svc-head">
+              <i class="fas fa-shield-alt"></i>
+              <div>
+                <h3 class="h4 mb-0">Security Solutions</h3>
+                <small class="opacity-75">Surveillance • Hardening • Compliance</small>
+              </div>
+            </div>
+            <div class="svc-body">
+              <p>Protect your people and assets with end-to-end security: surveillance, network hardening, and best-practice controls.</p>
+              <div class="row">
+                <div class="col-md-6">
+                  <ul>
+                    <li>CCTV & NVR/DVR setup</li>
+                    <li>Access control basics</li>
+                    <li>Firewall policies & NAT</li>
+                    <li>Endpoint protection</li>
+                  </ul>
+                </div>
+                <div class="col-md-6">
+                  <ul>
+                    <li>Patch & update hygiene</li>
+                    <li>Least-privilege access</li>
+                    <li>Backup & recovery plans</li>
+                    <li>Security posture reviews</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="mt-3 d-flex gap-2">
+                <a href="#contact-cta" class="btn btn-secondary text-white rounded-pill px-4">Book a security consult</a>
+                <a href="index.html#services" class="btn btn-outline-primary rounded-pill px-4">Back to overview</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Devices -->
+        <div id="devices" class="svc-anchor mb-4">
+          <div class="svc-card wow fadeIn" data-wow-delay=".2s">
+            <div class="svc-head">
+              <i class="fas fa-print"></i>
+              <div>
+                <h3 class="h4 mb-0">Device Support</h3>
+                <small class="opacity-75">PC/Mac • Printers • Peripherals</small>
+              </div>
+            </div>
+            <div class="svc-body">
+              <p>Setup, troubleshooting, and lifecycle care for the devices your team relies on every day.</p>
+              <div class="row">
+                <div class="col-md-6">
+                  <ul>
+                    <li>PC/Mac provisioning</li>
+                    <li>Printer & MFP setup</li>
+                    <li>Driver & firmware updates</li>
+                    <li>Data transfer & migration</li>
+                  </ul>
+                </div>
+                <div class="col-md-6">
+                  <ul>
+                    <li>Performance tuning</li>
+                    <li>Peripherals & conferencing</li>
+                    <li>Vendor warranty coordination</li>
+                    <li>Asset tagging & inventory</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="mt-3 d-flex gap-2">
+                <a href="#contact-cta" class="btn btn-secondary text-white rounded-pill px-4">Schedule device help</a>
+                <a href="index.html#services" class="btn btn-outline-primary rounded-pill px-4">Back to overview</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service Desk -->
+        <div id="service-desk" class="svc-anchor mb-4">
+          <div class="svc-card wow fadeIn" data-wow-delay=".25s">
+            <div class="svc-head">
+              <i class="fas fa-headset"></i>
+              <div>
+                <h3 class="h4 mb-0">IT Service Desk</h3>
+                <small class="opacity-75">Remote Support • SLAs • Tiered Escalation</small>
+              </div>
+            </div>
+            <div class="svc-body">
+              <p>Responsive remote support with clear SLAs and escalation paths to keep your operations running.</p>
+              <div class="row">
+                <div class="col-md-6">
+                  <ul>
+                    <li>Tier 1–3 support</li>
+                    <li>Ticketing & reporting</li>
+                    <li>Microsoft 365 assistance</li>
+                    <li>Password & access resets</li>
+                  </ul>
+                </div>
+                <div class="col-md-6">
+                  <ul>
+                    <li>Incident & problem mgmt</li>
+                    <li>Knowledge base creation</li>
+                    <li>Proactive maintenance</li>
+                    <li>Remote monitoring (RMM)</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="mt-3 d-flex gap-2">
+                <a href="#contact-cta" class="btn btn-secondary text-white rounded-pill px-4">Compare support plans</a>
+                <a href="index.html#services" class="btn btn-outline-primary rounded-pill px-4">Back to overview</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Business -->
+        <div id="business" class="svc-anchor mb-4">
+          <div class="svc-card wow fadeIn" data-wow-delay=".3s">
+            <div class="svc-head">
+              <i class="fas fa-briefcase"></i>
+              <div>
+                <h3 class="h4 mb-0">Business Solutions</h3>
+                <small class="opacity-75">Roadmaps • Migrations • Governance</small>
+              </div>
+            </div>
+            <div class="svc-body">
+              <p>Strategic consulting and implementations to align IT with business goals and compliance needs.</p>
+              <div class="row">
+                <div class="col-md-6">
+                  <ul>
+                    <li>IT assessments & roadmaps</li>
+                    <li>M365 rollout & governance</li>
+                    <li>Email/domain migrations</li>
+                    <li>Backup & DR planning</li>
+                  </ul>
+                </div>
+                <div class="col-md-6">
+                  <ul>
+                    <li>Policy & standards baseline</li>
+                    <li>Vendor & license audits</li>
+                    <li>Cost optimization</li>
+                    <li>Change management</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="mt-3 d-flex gap-2">
+                <a href="#contact-cta" class="btn btn-secondary text-white rounded-pill px-4">Start a discovery call</a>
+                <a href="index.html#services" class="btn btn-outline-primary rounded-pill px-4">Back to overview</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Home Tech -->
+        <div id="home-tech" class="svc-anchor mb-5">
+          <div class="svc-card wow fadeIn" data-wow-delay=".35s">
+            <div class="svc-head">
+              <i class="fas fa-home"></i>
+              <div>
+                <h3 class="h4 mb-0">Home Technology</h3>
+                <small class="opacity-75">Smart Home • Wi-Fi • Security</small>
+              </div>
+            </div>
+            <div class="svc-body">
+              <p>Professional-grade tech for homes: strong Wi-Fi, smart integrations, and peace-of-mind security.</p>
+              <div class="row">
+                <div class="col-md-6">
+                  <ul>
+                    <li>Whole-home Wi-Fi & mesh</li>
+                    <li>Smart TV & streaming</li>
+                    <li>Voice assistant setup</li>
+                    <li>CCTV for residences</li>
+                  </ul>
+                </div>
+                <div class="col-md-6">
+                  <ul>
+                    <li>Parental controls</li>
+                    <li>NAS & backups</li>
+                    <li>Printer/scanner setup</li>
+                    <li>Cyber safety basics</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="mt-3 d-flex gap-2">
+                <a href="#contact-cta" class="btn btn-secondary text-white rounded-pill px-4">Get a home consult</a>
+                <a href="index.html#services" class="btn btn-outline-primary rounded-pill px-4">Back to overview</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CTA -->
+        <div id="contact-cta" class="cta-band p-4 p-md-5 mb-4 wow fadeIn" data-wow-delay=".4s">
+          <div class="row align-items-center g-3">
+            <div class="col-md">
+              <h3 class="mb-1">Ready to level up your IT?</h3>
+              <p class="mb-0">Tell us what you need—we’ll tailor the plan.</p>
+            </div>
+            <div class="col-md-auto d-flex gap-2">
+              <a href="tel:+19168189115" class="btn btn-light rounded-pill px-4"><i class="fa fa-phone me-2"></i>Call +1 (916) 818-9115</a>
+              <a href="index.html#contact" class="btn btn-dark rounded-pill px-4"><i class="fa fa-envelope me-2"></i>Contact form</a>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /col-lg-9 -->
+    </div><!-- /row -->
+  </section>
+
+  <!-- Footer include -->
+  <footer id="footer-container"></footer>
+
+  <!-- Back to top -->
+  <a href="#" class="btn btn-secondary btn-square rounded-circle back-to-top"><i class="fa fa-arrow-up text-white"></i></a>
+
+  <!-- JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Your includes loader (injects navbar/footer & sets active link) -->
+  <script src="js/includes.js"></script>
+  <script>
+    // Optional: smooth-scroll for same-page anchor clicks
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', e=>{
+        const id = a.getAttribute('href');
+        const el = document.querySelector(id);
+        if(el){
+          e.preventDefault();
+          el.scrollIntoView({behavior:'smooth', block:'start'});
+        }
+      });
+    });
+  </script>
+</body>
+</html>

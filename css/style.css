@@ -464,7 +464,7 @@
 }
 
 .page-header {
-    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../img/carousel-1.jpg) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../img/carousel-1.webp) center center no-repeat !important;
     background-size: cover;
 }
 
@@ -905,3 +905,54 @@
 
 
 /*** styles for services page ***/
+    /* Header image + overlay reuse */
+    .page-header {
+      background: linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)), url(img/carousel-1.webp) center/cover no-repeat;
+    }
+
+    /* Services TOC (sticky) */
+    .services-toc {
+      position: sticky;
+      top: 90px;
+      background: var(--bs-light);
+      border: 1px solid #e9ecef;
+      border-radius: 10px;
+      padding: 1rem;
+    }
+    .services-toc a {
+      display: block;
+      padding: .35rem .25rem;
+      font-weight: 600;
+      color: var(--bs-primary);
+      text-decoration: none;
+    }
+    .services-toc a:hover { color: var(--bs-secondary); }
+
+    /* Section cards */
+    .svc-card {
+      background: var(--bs-white);
+      border-radius: 12px;
+      box-shadow: 0 8px 30px rgba(0,0,0,.08);
+      overflow: hidden;
+      height: 100%;
+    }
+    .svc-card .svc-head {
+      background: linear-gradient(135deg, var(--bs-primary), var(--bs-primary-light));
+      color: var(--bs-white);
+      padding: 1.25rem 1.25rem;
+      display: flex; gap: .75rem; align-items: center;
+    }
+    .svc-card .svc-head i { font-size: 2rem; }
+    .svc-card .svc-body { padding: 1.25rem; }
+    .svc-card .svc-body ul { margin: 0; padding-left: 1.2rem; }
+    .svc-card .svc-body li { margin-bottom: .4rem; }
+
+    /* CTA band */
+    .cta-band {
+      background: linear-gradient(135deg, var(--bs-secondary), var(--bs-secondary-light));
+      color: var(--bs-white);
+      border-radius: 14px;
+    }
+
+    /* Anchor offset for fixed nav (smooth scroll feel) */
+    .svc-anchor { position: relative; scroll-margin-top: 90px; }

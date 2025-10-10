@@ -2,18 +2,18 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>About | NavSync Solutions</title>
+  <title>About Us | NavSync Solutions - IT Services & Solutions</title>
 
   <!-- Meta Tags for better SEO -->
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="IT support, network infrastructure, security solutions, device support, IT service desk, business IT services, home technology solutions" name="keywords">
-  <meta content="NavSync Solutions delivers expert IT support and technology solutions tailored to homes and businesses. Our services include network infrastructure, security solutions, device support, and IT service desk." name="description">
+  <meta content="Learn about NavSync Solutions - your trusted IT partner delivering reliable support, secure networks, and modern technology solutions for homes and businesses." name="description">
 
   <!-- Open Graph Meta Tags -->
-  <meta property="og:title" content="NavSync Solutions | IT Services & Solutions">
-  <meta property="og:description" content="Expert IT support for homes and businesses">
+  <meta property="og:title" content="About NavSync Solutions | IT Services & Solutions">
+  <meta property="og:description" content="Trusted IT partners delivering reliable support, secure networks, and modern technology solutions">
   <meta property="og:image" content="img/og-image.jpg">
-  <meta property="og:url" content="https://www.navsyncs.com">
+  <meta property="og:url" content="https://www.navsyncs.com/about">
   <meta property="og:type" content="website">
 
   <!-- Google Web Fonts -->
@@ -42,121 +42,259 @@
   <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
 
   <style>
-    /* 1) Monotone blue image treatment (uses your --bs-primary) */
-    .mono-blue {
-      position: relative;
-      display: block;
-      width: 100%;
-      height: auto;
-      object-fit: cover;
-      mix-blend-mode: normal;
+    /* Modern Design System */
+    :root {
+      --section-spacing: 5rem;
+      --card-radius: 16px;
+      --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    /* 2) Minimal spacing + section titles */
-    .section-title {
-      margin-bottom: .75rem;
-      font-weight: 700;
-      color: var(--bs-primary);
-    }
-    .section-subtitle {
-      margin-bottom: 2rem;
-      color: var(--bs-gray);
-    }
-
-    /* 3) Hero (match index vibe, but simplified) */
+    /* Hero Section */
     .about-hero {
+      color: var(--bs-gray);
+      padding: 6rem 0 4rem;
       position: relative;
-      min-height: 48vh;
-      display: grid;
-      align-items: center;
-      background:
-        linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)),
-        url("img/placeholder-hero.jpg") center/cover no-repeat;
-      color: var(--bs-white);
-      border-bottom: 1px solid rgba(255,255,255,.08);
+      overflow: hidden;
     }
-    .about-hero h1 { font-weight: 700; }
-    .about-hero p  { max-width: 720px; }
 
-    /* 4) Cards */
-    .simple-card {
+    .about-hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url('img/pattern.svg') center/cover;
+      opacity: 0.1;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    /* Section Styling */
+    .section-title {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      background: linear-gradient(135deg, var(--bs-primary), var(--bs-primary-dark));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .section-subtitle {
+      font-size: 1.2rem;
+      color: var(--bs-gray);
+      margin-bottom: 3rem;
+      max-width: 600px;
+    }
+
+    /* Modern Cards */
+    .modern-card {
       background: var(--bs-white);
-      border: 1px solid #e9ecef;
-      border-radius: 12px;
-      box-shadow: 0 8px 24px rgba(0,0,0,.04);
+      border-radius: var(--card-radius);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      border: 1px solid rgba(0, 0, 0, 0.05);
+      transition: var(--transition);
       height: 100%;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      overflow: hidden;
     }
-    .simple-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 12px 32px rgba(0,0,0,.08);
+
+    .modern-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
     }
-    .simple-card .body { padding: 1.25rem; }
 
-    /* 5) Team cards */
-    .team-card .photo { aspect-ratio: 4/3; }
-    .team-card h5 { margin: .75rem 0 .25rem; color: var(--bs-dark); }
-    .team-card .role { color: var(--bs-primary); font-weight: 600; }
-    .team-card .cred { color: var(--bs-gray); font-size: .95rem; }
-
-
-    /* 7) KPI stats */
-    .kpi {
-      display: grid;
-      place-items: center;
-      text-align: center;
-      padding: 1.25rem;
-      border-radius: 12px;
-      background: #f5f9ff;
-      border: 1px solid #e6eef9;
-      transition: transform 0.3s ease;
-    }
-    .kpi:hover {
-      transform: translateY(-3px);
-      background: #e8f2ff;
-    }
-    .kpi .num { font-size: 2rem; font-weight: 700; color: var(--bs-primary); }
-    .kpi .label { color: var(--bs-gray); }
-
-    /* 8) CTA band */
-    .cta-band {
-      background: linear-gradient(135deg, var(--bs-secondary), var(--bs-secondary-dark));
-      border-radius: 14px;
-      color: var(--bs-white);
-      margin: 3rem 0;
+    .card-image {
+      height: 200px;
+      background: var(--bs-primary-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
       position: relative;
-      z-index: 1;
+      overflow: hidden;
     }
 
-    /* Fix overlapping issues */
-    section { 
-      position: relative; 
-      z-index: 1; /* Consistent z-index for all sections */
-      overflow: visible; /* Ensure content doesn't get clipped */
+    .card-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: var(--transition);
     }
 
-    /* Ensure proper spacing between sections */
-    .py-5 {
-      padding-top: 3rem !important;
-      padding-bottom: 3rem !important;
+    .modern-card:hover .card-image img {
+      transform: scale(1.05);
     }
 
-    @media (max-width: 767.98px) {
-      .about-hero { min-height: 42vh; }
-      .py-5 {
-        padding-top: 2rem !important;
-        padding-bottom: 2rem !important;
+    .card-content {
+      padding: 2rem;
+    }
+
+    /* Team Section */
+    .team-card {
+      text-align: center;
+      border: none;
+    }
+
+    .team-image {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin: 0 auto 1.5rem;
+      border: 4px solid var(--bs-primary);
+      overflow: hidden;
+      background: var(--bs-primary-light);
+    }
+
+    .team-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .team-name {
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      color: var(--bs-dark);
+    }
+
+    .team-role {
+      color: var(--bs-primary);
+      font-weight: 500;
+      margin-bottom: 1rem;
+    }
+
+    .team-bio {
+      color: var(--bs-gray);
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    /* Service Areas */
+    .service-area {
+      background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+      border-radius: var(--card-radius);
+      padding: 2rem;
+      text-align: center;
+      transition: var(--transition);
+    }
+
+    .service-area:hover {
+      transform: translateY(-5px);
+      background: linear-gradient(135deg, var(--bs-primary-light) 0%, #e3f2fd 100%);
+    }
+
+    .area-icon {
+      font-size: 3rem;
+      color: var(--bs-primary);
+      margin-bottom: 1rem;
+    }
+
+    /* Testimonials */
+    .testimonial-card {
+      background: var(--bs-white);
+      border-radius: var(--card-radius);
+      padding: 2rem;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      margin: 1rem;
+      border-left: 4px solid var(--bs-secondary);
+    }
+
+    .testimonial-text {
+      font-style: italic;
+      color: var(--bs-gray);
+      margin-bottom: 1.5rem;
+      line-height: 1.7;
+    }
+
+    .client-info {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .client-avatar {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: var(--bs-primary-light);
+    }
+
+    .client-details h5 {
+      margin: 0;
+      color: var(--bs-dark);
+    }
+
+    .client-details p {
+      margin: 0;
+      color: var(--bs-gray);
+      font-size: 0.9rem;
+    }
+
+    /* CTA Section */
+    .cta-section {
+      background: linear-gradient(135deg, var(--bs-secondary) 0%, var(--bs-secondary-dark) 100%);
+      color: var(--bs-white);
+      padding: 4rem 0;
+      border-radius: var(--card-radius);
+      margin: 4rem 0;
+    }
+
+    .cta-content {
+      text-align: center;
+    }
+
+    .cta-title {
+      font-size: 2.2rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    .cta-buttons {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 2rem;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      :root {
+        --section-spacing: 3rem;
+      }
+      
+      .section-title {
+        font-size: 2rem;
+      }
+      
+      .about-hero {
+        padding: 4rem 0 2rem;
+      }
+      
+      .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .stat-number {
+        font-size: 2.5rem;
       }
     }
 
-    /* Additional spacing utilities */
-    .section-spacing {
-      margin-bottom: 4rem;
+    /* Animation Classes */
+    .fade-in-up {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.6s ease-out;
     }
-    
-    .no-overlap {
-      position: relative;
-      z-index: 1;
+
+    .fade-in-up.visible {
+      opacity: 1;
+      transform: translateY(0);
     }
   </style>
 </head>
@@ -170,191 +308,210 @@
 
   <!-- Navbar Injection -->
   <nav id="navbar-container"></nav>
+          <!-- Page Header -->
+          <div class="container-fluid page-header py-5">
+            <div class="container text-center py-5">
+              <h1 class="display-4 text-white mb-3 animated slideInDown">About Us</h1>
+              <nav aria-label="breadcrumb" class="animated slideInDown">
+                <ol class="breadcrumb justify-content-center mb-0">
+                  <li class="breadcrumb-item"><a class="text-white-50" href="index.html">Home</a></li>
+                  <li class="breadcrumb-item text-white active" aria-current="page">About Us</li>
+                </ol>
+              </nav>
+            </div>
+          </div>
+          <!-- Page Header End-->
 
-  <!-- Page Header Start -->
-  <div class="container-fluid page-header py-5">
-    <div class="container text-center py-5">
-      <h1 class="display-2 text-white mb-4 animated slideInDown">About Us</h1>
-      <nav aria-label="breadcrumb animated slideInDown">
-        <ol class="breadcrumb justify-content-center mb-0">
-          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-          <li class="breadcrumb-item" aria-current="page">About</li>
-        </ol>
-      </nav>
-    </div>
-  </div>
-  <!-- Page Header End -->
+        <!-- Fact Start -->
+            <div class="container-fluid py-5 facts">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 wow fadeIn" data-wow-delay=".1s">
+                            <div class="d-flex counter">
+                                <h1 class="text-primary counter-value">100</h1>
+                                <h5 class="ms-4 text-white mt-1">Problems Solved for Our Clients</h5>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 wow fadeIn" data-wow-delay=".3s">
+                            <div class="d-flex counter">
+                                <h1 class="text-primary counter-value">24</h1>
+                                <h5 class="ms-4 text-white mt-1">Hour IT Support Availability</h5>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 wow fadeIn" data-wow-delay=".5s">
+                            <div class="d-flex counter">
+                                <h1 class="text-primary counter-value">98</h1>
+                                <h5 class="ms-4 text-white mt-1">% Client Satisfaction Rate</h5>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 wow fadeIn" data-wow-delay=".7s">
+                            <div class="d-flex counter">
+                                <h1 class="text-primary counter-value">1</h1>
+                                <h5 class="ms-5 text-white mt-1">Hour Average Response Time</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!--Fact End-->
 
-  <!-- Fact Start -->
-  <div class="container-fluid py-5 facts">
+  <!-- Hero Section -->
+  <section class="about-hero">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-3 wow fadeIn" data-wow-delay=".1s">
-          <div class="d-flex counter">
-            <h1 class="text-primary counter-value">100</h1>
-            <h5 class="ms-4 text-white mt-1">Problems Solved for Our Clients</h5>
-          </div>
-        </div>
-        <div class="col-lg-3 wow fadeIn" data-wow-delay=".3s">
-          <div class="d-flex counter">
-            <h1 class="text-primary counter-value">24</h1>
-            <h5 class="ms-4 text-white mt-1">Hour IT Support Availability</h5>
-          </div>
-        </div>
-        <div class="col-lg-3 wow fadeIn" data-wow-delay=".5s">
-          <div class="d-flex counter">
-            <h1 class="text-primary counter-value">98</h1>
-            <h5 class="ms-4 text-white mt-1">% Client Satisfaction Rate</h5>
-          </div>
-        </div>
-        <div class="col-lg-3 wow fadeIn" data-wow-delay=".7s">
-          <div class="d-flex counter">
-            <h1 class="text-primary counter-value">1</h1>
-            <h5 class="ms-5 text-white mt-1">Hour Average Response Time</h5>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Fact End -->
-
-  <!-- HERO -->
-  <header class="about-hero">
-    <div class="container py-5">
-      <div class="row align-items-center">
-        <div class="col-lg-10">
-          <h1 class="display-5 mb-3">About NavSync Solutions</h1>
-          <p class="lead mb-4">
-            Trusted IT partners delivering reliable support, secure networks, and modern technology solutions for homes and businesses across MD, DC & VA.
+      <div class="row align-items-center min-vh-50">
+        <div class="col-lg-8 hero-content">
+          <h1 class="display-4 text-primary  mb-4">Transforming Businesses Through Technology</h1>
+          <p class="lead mb-4 fs-5">
+            NavSync Solutions is your trusted IT partner, delivering reliable support, secure networks, 
+            and innovative technology solutions that drive business growth and operational excellence.
           </p>
-          <!-- TODO add a drop down list to select between a quote, proposal and book a consultation -->
-          <div class="d-flex gap-2 flex-wrap">
-            <a href="contact.html" class="btn bg-secondary text-white px-4 py-2 rounded-pill">Request a Proposal</a>
-            <a href="contact.html" class="btn bg-primary text-white px-4 py-2 rounded-pill">Book a Consultation</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <!-- COMPANY OVERVIEW -->
-  <section class="py-5 no-overlap">
-    <div class="container">
-      <div class="row g-4 align-items-center">
-        <div class="col-lg-6">
-          <h2 class="section-title">Who We Are</h2>
-          <p class="section-subtitle">Experienced, certified, and focused on outcomes.</p>
-          <p>
-            NavSync Solutions provides end-to-end IT services: network infrastructure, security & surveillance, device support, and responsive service desk.
-            We align technology to your operations with clear SLAs and a consultative approach.
-          </p>
-          <ul class="mt-3">
-            <li>CompTIA-certified technicians (Network+, Security+)</li>
-            <li>Service coverage: Maryland, Washington DC, Virginia</li>
-            <li>Contract-friendly processes and documentation</li>
-          </ul>
-        </div>
-        <div class="col-lg-6">
-          <!-- Image placeholder (monotone) -->
-          <div class="mono-wrap">
-            <img class="mono-blue" src="img/carousel-3.webp" alt="Company overview placeholder">
+          <div class="d-flex gap-3 flex-wrap">
+            <a href="contact.html" class="btn btn-outline-dark btn-lg px-4 py-3 rounded-pill fw-semibold">
+              <i class="fas fa-rocket me-2"></i>Start Your Project
+            </a>
+            <a href="services.html" class="btn btn-outline-dark btn-lg px-4 py-3 rounded-pill fw-semibold">
+              <i class="fas fa-play-circle me-2"></i>Our Services
+            </a>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- TEAM & CERTIFICATIONS -->
-  <section class="py-5 no-overlap">
-    <div class="container">
-      <div class="d-flex justify-content-between align-items-end flex-wrap gap-2 mb-4">
-        <div>
-          <h2 class="section-title">Leadership & Expertise</h2>
-          <p class="section-subtitle mb-0">Skilled professionals with proven credentials.</p>
-        </div>
-      </div>
 
-      <div class="row g-4">
-        <!-- Team Card 1 -->
-        <div class="col-md-4">
-          <div class="simple-card team-card h-100">
-            <div class="mono-wrap">
-              <img class="mono-blue photo" src="img/team-1.jpg" alt="Team member photo 1">
-            </div>
-            <div class="body">
-              <h5>Full Name</h5>
-              <div class="role">Title / Role</div>
-              <div class="cred">CompTIA Network+, Security+ • Years of Experience</div>
-            </div>
-          </div>
-        </div>
-        <!-- Team Card 2 -->
-        <div class="col-md-4">
-          <div class="simple-card team-card h-100">
-            <div class="mono-wrap">
-              <img class="mono-blue photo" src="img/team-2.jpg" alt="Team member photo 2">
-            </div>
-            <div class="body">
-              <h5>Full Name</h5>
-              <div class="role">Title / Role</div>
-              <div class="cred">CompTIA Network+ • Microsoft 365 Admin</div>
-            </div>
-          </div>
-        </div>
-        <!-- Team Card 3 -->
-        <div class="col-md-4">
-          <div class="simple-card team-card h-100">
-            <div class="mono-wrap">
-              <img class="mono-blue photo" src="img/team-3.jpg" alt="Team member photo 3">
-            </div>
-            <div class="body">
-              <h5>Full Name</h5>
-              <div class="role">Title / Role</div>
-              <div class="cred">CompTIA Security+ • CCTV & Access Control</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- SLA & COVERAGE -->
-  <section class="py-5 no-overlap">
+  <!-- Our Story Section -->
+  <section class="py-5" style="padding-top: var(--section-spacing); padding-bottom: var(--section-spacing);">
     <div class="container">
-      <div class="row g-4 align-items-center">
-        <div class="col-lg-5">
-          <h2 class="section-title">Service Level Commitment</h2>
-          <p class="section-subtitle">Clear, responsive, and accountable.</p>
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <span class="text-primary fw-semibold">OUR STORY</span>
+          <h2 class="section-title">Building Trust Through Technology</h2>
+          <p class="section-subtitle">
+            Founded with a vision to make enterprise-grade IT solutions accessible to businesses of all sizes.
+          </p>
+          <div class="mb-4">
+            <p class="fs-6">
+              NavSync Solutions was born from a simple observation: small and medium businesses deserve 
+              the same level of IT expertise and reliability as large enterprises. Our journey began 
+              with a commitment to bridge this gap, providing comprehensive IT solutions that empower 
+              businesses to thrive in the digital age.
+            </p>
+            <p class="fs-6">
+              Today, we're proud to be the trusted technology partner for businesses across Maryland, 
+              Washington DC, and Virginia, delivering innovative solutions that drive growth, enhance 
+              security, and optimize operations.
+            </p>
+          </div>
           <div class="row g-3">
-            <div class="col-6 col-md-4">
-              <div class="kpi">
-                <div class="num">1 hr</div>
-                <div class="label">Avg. Response</div>
+            <div class="col-sm-6">
+              <div class="d-flex align-items-center">
+                <i class="fas fa-check-circle text-primary me-3 fs-5"></i>
+                <span>CompTIA Certified Team</span>
               </div>
             </div>
-            <div class="col-6 col-md-4">
-              <div class="kpi">
-                <div class="num">98%</div>
-                <div class="label">Client Satisfaction</div>
+            <div class="col-sm-6">
+              <div class="d-flex align-items-center">
+                <i class="fas fa-check-circle text-primary me-3 fs-5"></i>
+                <span>24/7 Support Available</span>
               </div>
             </div>
-            <div class="col-6 col-md-4">
-              <div class="kpi">
-                <div class="num">99.9%</div>
-                <div class="label">Uptime Goal</div>
+            <div class="col-sm-6">
+              <div class="d-flex align-items-center">
+                <i class="fas fa-check-circle text-primary me-3 fs-5"></i>
+                <span>Proven Track Record</span>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="d-flex align-items-center">
+                <i class="fas fa-check-circle text-primary me-3 fs-5"></i>
+                <span>Customized Solutions</span>
               </div>
             </div>
           </div>
-          <p class="mt-3 mb-0">We provide documented SLAs for contract clients with regular reporting.</p>
         </div>
-        <div class="col-lg-7">
-          <div class="simple-card">
-            <div class="body">
-              <h5 class="mb-2">Service Regions</h5>
-              <p class="mb-3">Maryland, Washington DC, and Virginia</p>
-              <!-- Map/illustration placeholder -->
-              <div class="mono-wrap">
- <iframe class="rounded w-100 h-100" src="https://www.google.com/maps/place/Maryland,+USA/@38.7793612,-79.8787986,7z/data=!3m1!4b1!4m6!3m5!1s0x89b64debe9f190df:0xf2af37657655f6b1!8m2!3d39.0457549!4d-76.6412712!16zL20vMDRycmQ?entry=ttu&g_ep=EgoyMDI1MTAwNy4wIKXMDSoASAFQAw%3D%3D" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="col-lg-6">
+          <div class="modern-card">
+            <div class="card-image">
+              <img src="img/about-story.jpg" alt="Our Team at Work" class="img-fluid">
+            </div>
+            <div class="card-content">
+              <h4 class="fw-semibold mb-3">Why Choose NavSync?</h4>
+              <p class="text-muted mb-0">
+                We combine technical expertise with business acumen to deliver solutions that 
+                not only work flawlessly but also drive tangible business results.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Team Section -->
+  <section class="py-5 bg-light" style="padding-top: var(--section-spacing); padding-bottom: var(--section-spacing);">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="text-primary fw-semibold">OUR TEAM</span>
+        <h2 class="section-title">Meet Our Experts</h2>
+        <p class="section-subtitle mx-auto">
+          Certified professionals dedicated to your success
+        </p>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="modern-card team-card">
+            <div class="card-content">
+              <div class="team-image">
+                <img src="#" alt="Team Member">
+              </div>
+              <h3 class="team-name">Ajmal Khan</h3>
+              <div class="team-role">Lead Network Engineer</div>
+              <div class="team-bio">
+                CompTIA Network+ and Security+ certified with over 8 years of experience 
+                in enterprise network design and implementation.
+              </div>
+              <div class="mt-3">
+                <span class="badge bg-primary me-2">Network+</span>
+                <span class="badge bg-primary">Security+</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="modern-card team-card">
+            <div class="card-content">
+              <div class="team-image">
+                <img src="#" alt="Team Member">
+              </div>
+              <h3 class="team-name">Khyber Safi</h3>
+              <div class="team-role">Security Specialist</div>
+              <div class="team-bio">
+                Cybersecurity expert specializing in surveillance systems, access control, 
+                and comprehensive security solutions for modern businesses.
+              </div>
+              <div class="mt-3">
+                <span class="badge bg-primary me-2">Security+</span>
+                <span class="badge bg-primary">CCTV Pro</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="modern-card team-card">
+            <div class="card-content">
+              <div class="team-image">
+                <img src="#" alt="Team Member">
+              </div>
+              <h3 class="team-name">Khalid Safi</h3>
+              <div class="team-role">IT Support Manager</div>
+              <div class="team-bio">
+                Microsoft 365 certified professional with extensive experience in device 
+                support, troubleshooting, and IT service desk management.
+              </div>
+              <div class="mt-3">
+                <span class="badge bg-primary me-2">M365 Admin</span>
+                <span class="badge bg-primary">Network+</span>
               </div>
             </div>
           </div>
@@ -363,116 +520,120 @@
     </div>
   </section>
 
-        <!-- Testimonial Start -->
-        <div class="container-fluid testimonial">
-            <div class="container py-2">
-                <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
-                    <h5 class="text-primary">Our Testimonial</h5>
-                    <h1>Our Client Saying!</h1>
-                </div>
-                <div class="owl-carousel testimonial-carousel wow fadeIn" data-wow-delay=".5s">
-                    <div class="testimonial-item border p-4">
-                        <div class="d-flex align-items-center">
-                            <div class="">
-                                <img src="img/testimonial-1.jpg" alt="">
-                            </div>
-                            <div class="ms-4">
-                                <h4 class="text-secondary">Client Name</h4>
-                                <p class="m-0 pb-3">Profession</p>
-                                <div class="d-flex pe-5">
-                                    <i class="fas fa-star me-1 text-primary"></i>
-                                    <i class="fas fa-star me-1 text-primary"></i>
-                                    <i class="fas fa-star me-1 text-primary"></i>
-                                    <i class="fas fa-star me-1 text-primary"></i>
-                                    <i class="fas fa-star me-1 text-primary"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="border-top mt-4 pt-3">
-                            <p class="mb-0">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum aliquam dolor eget urna. Nam volutpat libero sit amet leo cursus, ac viverra eros morbi quis quam mi.</p>
-                        </div>
-                    </div>
-                    <div class="testimonial-item border p-4">
-                        <div class=" d-flex align-items-center">
-                            <div class="">
-                                <img src="img/testimonial-2.jpg" alt="">
-                            </div>
-                            <div class="ms-4">
-                                <h4 class="text-secondary">Client Name</h4>
-                                <p class="m-0 pb-3">Profession</p>
-                                <div class="d-flex pe-5">
-                                    <i class="fas fa-star me-1 text-primary"></i>
-                                    <i class="fas fa-star me-1 text-primary"></i>
-                                    <i class="fas fa-star me-1 text-primary"></i>
-                                    <i class="fas fa-star me-1 text-primary"></i>
-                                    <i class="fas fa-star me-1 text-primary"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="border-top mt-4 pt-3">
-                            <p class="mb-0">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum aliquam dolor eget urna. Nam volutpat libero sit amet leo cursus, ac viverra eros morbi quis quam mi.</p>
-                        </div>
-                    </div>
-                    <div class="testimonial-item border p-4">
-                        <div class=" d-flex align-items-center">
-                            <div class="">
-                                <img src="img/testimonial-3.jpg" alt="">
-                            </div>
-                            <div class="ms-4">
-                                <h4 class="text-secondary">Client Name</h4>
-                                <p class="m-0 pb-3">Profession</p>
-                                <div class="d-flex pe-5">
-                                    <i class="fas fa-star me-1 text-primary"></i>
-                                    <i class="fas fa-star me-1 text-primary"></i>
-                                    <i class="fas fa-star me-1 text-primary"></i>
-                                    <i class="fas fa-star me-1 text-primary"></i>
-                                    <i class="fas fa-star me-1 text-primary"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="border-top mt-4 pt-3">
-                            <p class="mb-0">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum aliquam dolor eget urna. Nam volutpat libero sit amet leo cursus, ac viverra eros morbi quis quam mi.</p>
-                        </div>
-                    </div>
-                    <div class="testimonial-item border p-4">
-                        <div class=" d-flex align-items-center">
-                            <div class="">
-                                <img src="img/testimonial-4.jpg" alt="">
-                            </div>
-                            <div class="ms-4">
-                                <h4 class="text-secondary">Client Name</h4>
-                                <p class="m-0 pb-3">Profession</p>
-                                <div class="d-flex pe-5">
-                                    <i class="fas fa-star me-1 text-primary"></i>
-                                    <i class="fas fa-star me-1 text-primary"></i>
-                                    <i class="fas fa-star me-1 text-primary"></i>
-                                    <i class="fas fa-star me-1 text-primary"></i>
-                                    <i class="fas fa-star me-1 text-primary"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="border-top mt-4 pt-3">
-                            <p class="mb-0">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum aliquam dolor eget urna. Nam volutpat libero sit amet leo cursus, ac viverra eros morbi quis quam mi.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Testimonial End -->
-
-
-  <!-- FINAL CTA -->
-  <section class="py-5 no-overlap">
+  <!-- Service Areas -->
+  <section class="py-5" style="padding-top: var(--section-spacing); padding-bottom: var(--section-spacing);">
     <div class="container">
-      <div class="cta-band p-4 p-md-5 d-flex flex-column flex-lg-row align-items-center justify-content-between gap-3">
-        <div>
-          <h3 class="mb-1">Looking for a reliable IT partner?</h3>
-          <p class="mb-0">Tell us your goals — we'll craft the right solution.</p>
+      <div class="text-center mb-5">
+        <span class="text-primary fw-semibold">SERVICE REGIONS</span>
+        <h2 class="section-title">Where We Serve</h2>
+        <p class="section-subtitle mx-auto">
+          Providing expert IT solutions across the DMV area
+        </p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="service-area">
+            <i class="fas fa-city area-icon"></i>
+            <h4>Maryland</h4>
+            <p class="text-muted">Comprehensive IT services for businesses throughout Maryland</p>
+          </div>
         </div>
-        <div class="d-flex gap-2">
-          <a href="#contact" class="btn bg-white text-dark rounded-pill px-4">Request a Proposal</a>
-          <a href="#contact" class="btn bg-dark text-white rounded-pill px-4">Book a Consultation</a>
+        <div class="col-md-4">
+          <div class="service-area">
+            <i class="fas fa-monument area-icon"></i>
+            <h4>Washington DC</h4>
+            <p class="text-muted">Enterprise-grade solutions for the nation's capital</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service-area">
+            <i class="fas fa-university area-icon"></i>
+            <h4>Virginia</h4>
+            <p class="text-muted">Reliable IT support for Virginia's growing business community</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="py-5 bg-light" style="padding-top: var(--section-spacing); padding-bottom: var(--section-spacing);">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="text-primary fw-semibold">TESTIMONIALS</span>
+        <h2 class="section-title">What Our Clients Say</h2>
+        <p class="section-subtitle mx-auto">
+          Don't just take our word for it - hear from our satisfied clients
+        </p>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="testimonial-card">
+            <div class="testimonial-text">
+              "NavSync transformed our network infrastructure with zero downtime. Their team is professional, knowledgeable, and always available when we need them."
+            </div>
+            <div class="client-info">
+              <div class="client-avatar">
+                <img src="img/client-1.jpg" alt="Client" class="img-fluid">
+              </div>
+              <div class="client-details">
+                <h5>Jennifer Martinez</h5>
+                <p>Operations Director, TechCorp</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="testimonial-card">
+            <div class="testimonial-text">
+              "The security system implementation was seamless. NavSync's attention to detail and commitment to quality is exceptional."
+            </div>
+            <div class="client-info">
+              <div class="client-avatar">
+                <img src="img/client-2.jpg" alt="Client" class="img-fluid">
+              </div>
+              <div class="client-details">
+                <h5>Robert Kim</h5>
+                <p>CEO, SecurePlus Inc.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="testimonial-card">
+            <div class="testimonial-text">
+              "Outstanding service desk support. Quick response times and effective solutions that keep our business running smoothly."
+            </div>
+            <div class="client-info">
+              <div class="client-avatar">
+                <img src="img/client-3.jpg" alt="Client" class="img-fluid">
+              </div>
+              <div class="client-details">
+                <h5>Sarah Johnson</h5>
+                <p>IT Manager, GrowthLab</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA Section -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <h2 class="cta-title">Ready to Transform Your IT Infrastructure?</h2>
+        <p class="fs-5 opacity-90 mb-4">
+          Let's discuss how NavSync Solutions can help your business achieve its technology goals.
+        </p>
+        <div class="cta-buttons">
+          <a href="contact.html" class="btn btn-light btn-lg px-5 py-3 rounded-pill fw-semibold">
+            <i class="fas fa-calendar-check me-2"></i>Schedule Consultation
+          </a>
+          <a href="tel:+19168189115" class="btn btn-outline-light btn-lg px-5 py-3 rounded-pill fw-semibold">
+            <i class="fas fa-phone me-2"></i>Call Now: (916) 818-9115
+          </a>
         </div>
       </div>
     </div>

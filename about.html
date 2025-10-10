@@ -36,13 +36,17 @@
   <link href="css/style.css" rel="stylesheet">
 
   <!-- Favicon -->
-  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+  <link rel="icon" href="img/favicon.svg" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon_180x180.png">
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
 
   <style>
     /* Modern Design System */
+    html, body {
+      overflow-x: hidden;
+    }
+    
     :root {
       --section-spacing: 5rem;
       --card-radius: 16px;
@@ -239,8 +243,7 @@
       background: linear-gradient(135deg, var(--bs-secondary) 0%, var(--bs-secondary-dark) 100%);
       color: var(--bs-white);
       padding: 4rem 0;
-      border-radius: var(--card-radius);
-      margin: 4rem 0;
+      margin: 1.5rem 0;
     }
 
     .cta-content {
@@ -285,21 +288,10 @@
       }
     }
 
-    /* Animation Classes */
-    .fade-in-up {
-      opacity: 0;
-      transform: translateY(30px);
-      transition: all 0.6s ease-out;
-    }
-
-    .fade-in-up.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
   </style>
 </head>
 
-<body>
+<body style="overflow-x: hidden;">
   <!-- Spinner Start -->
   <div id="spinner" class="show position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
     <div class="spinner-grow text-primary" role="status"></div>
@@ -433,7 +425,7 @@
         <div class="col-lg-6">
           <div class="modern-card">
             <div class="card-image">
-              <img src="img/about-story.jpg" alt="Our Team at Work" class="img-fluid">
+              <img src="img/carousel-2.jpg" alt="Our Team at Work" class="img-fluid">
             </div>
             <div class="card-content">
               <h4 class="fw-semibold mb-3">Why Choose NavSync?</h4>
@@ -465,7 +457,7 @@
               <div class="team-image">
                 <img src="#" alt="Team Member">
               </div>
-              <h3 class="team-name">Ajmal Khan</h3>
+              <h3 class="team-name">Khyber Safi</h3>
               <div class="team-role">Lead Network Engineer</div>
               <div class="team-bio">
                 CompTIA Network+ and Security+ certified with over 8 years of experience 
@@ -484,7 +476,7 @@
               <div class="team-image">
                 <img src="#" alt="Team Member">
               </div>
-              <h3 class="team-name">Khyber Safi</h3>
+              <h3 class="team-name">Ajmal Khan</h3>
               <div class="team-role">Security Specialist</div>
               <div class="team-bio">
                 Cybersecurity expert specializing in surveillance systems, access control, 
@@ -574,7 +566,7 @@
             </div>
             <div class="client-info">
               <div class="client-avatar">
-                <img src="img/client-1.jpg" alt="Client" class="img-fluid">
+                <img src="img/testimonial-3.jpg" alt="Client" class="img-fluid">
               </div>
               <div class="client-details">
                 <h5>Jennifer Martinez</h5>
@@ -590,7 +582,7 @@
             </div>
             <div class="client-info">
               <div class="client-avatar">
-                <img src="img/client-2.jpg" alt="Client" class="img-fluid">
+                <img src="img/testimonial-2.jpg" alt="Client" class="img-fluid">
               </div>
               <div class="client-details">
                 <h5>Robert Kim</h5>
@@ -606,7 +598,7 @@
             </div>
             <div class="client-info">
               <div class="client-avatar">
-                <img src="img/client-3.jpg" alt="Client" class="img-fluid">
+                <img src="img/testimonial-1.jpg" alt="Client" class="img-fluid">
               </div>
               <div class="client-details">
                 <h5>Sarah Johnson</h5>
@@ -624,7 +616,7 @@
     <div class="container">
       <div class="cta-content">
         <h2 class="cta-title">Ready to Transform Your IT Infrastructure?</h2>
-        <p class="fs-5 opacity-90 mb-4">
+        <p class="fs-5 opacity-90">
           Let's discuss how NavSync Solutions can help your business achieve its technology goals.
         </p>
         <div class="cta-buttons">

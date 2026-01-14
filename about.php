@@ -156,47 +156,6 @@
       padding: 2rem;
     }
 
-    /* Team Section
-    .team-card {
-      text-align: center;
-      border: none;
-    }
-
-    .team-image {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      margin: 0 auto 1.5rem;
-      border: 4px solid var(--bs-primary);
-      overflow: hidden;
-      background: var(--bs-primary-light);
-    }
-
-    .team-image img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    .team-name {
-      font-size: 1.3rem;
-      font-weight: 600;
-      margin-bottom: 0.5rem;
-      color: var(--bs-dark);
-    }
-
-    .team-role {
-      color: var(--bs-primary);
-      font-weight: 500;
-      margin-bottom: 1rem;
-    }
-
-    .team-bio {
-      color: var(--bs-gray);
-      font-size: 0.95rem;
-      line-height: 1.6;
-    } */
-
     /* Service Areas */
     .service-area {
       background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
@@ -216,47 +175,6 @@
       color: var(--bs-primary);
       margin-bottom: 1rem;
     }
-
-    /* Testimonials
-    .testimonial-card {
-      background: var(--bs-white);
-      border-radius: var(--card-radius);
-      padding: 2rem;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-      margin: 1rem;
-      border-left: 4px solid var(--bs-secondary);
-    }
-
-    .testimonial-text {
-      font-style: italic;
-      color: var(--bs-gray);
-      margin-bottom: 1.5rem;
-      line-height: 1.7;
-    }
-
-    .client-info {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-    }
-
-    .client-avatar {
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      background: var(--bs-primary-light);
-    }
-
-    .client-details h5 {
-      margin: 0;
-      color: var(--bs-dark);
-    }
-
-    .client-details p {
-      margin: 0;
-      color: var(--bs-gray);
-      font-size: 0.9rem;
-    } */
 
     /* CTA Section */
     .cta-section {
@@ -328,15 +246,17 @@
   </div>
   <!-- Spinner End -->
 
-  <!-- Navbar Injection -->
-  <nav id="navbar-container"></nav>
+  <!-- Navbar component -->
+  <?php include 'includes/navbar.php'; ?>
+
+
           <!-- Page Header -->
           <div class="container-fluid page-header py-5">
             <div class="container text-center py-5">
               <h1 class="display-4 text-white mb-3 animated slideInDown">About Us</h1>
               <nav aria-label="breadcrumb" class="animated slideInDown">
                 <ol class="breadcrumb justify-content-center mb-0">
-                  <li class="breadcrumb-item"><a class="text-white-50" href="index.html">Home</a></li>
+                  <li class="breadcrumb-item"><a class="text-white-50" href="index.php">Home</a></li>
                   <li class="breadcrumb-item text-white active" aria-current="page">About Us</li>
                 </ol>
               </nav>
@@ -388,10 +308,10 @@
             and innovative technology solutions that drive business growth and operational excellence.
           </p>
           <div class="d-flex gap-3 flex-wrap">
-            <a href="contact.html" class="btn btn-outline-dark btn-lg px-4 py-3 rounded-pill fw-semibold">
+            <a href="contact.php" class="btn btn-outline-dark btn-lg px-4 py-3 rounded-pill fw-semibold">
               <i class="fas fa-rocket me-2"></i>Start Your Project
             </a>
-            <a href="services.html" class="btn btn-outline-dark btn-lg px-4 py-3 rounded-pill fw-semibold">
+            <a href="services.php" class="btn btn-outline-dark btn-lg px-4 py-3 rounded-pill fw-semibold">
               <i class="fas fa-play-circle me-2"></i>Our Services
             </a>
           </div>
@@ -470,177 +390,6 @@
     </div>
   </section>
 
-  <!-- Our Team Section
-  <section class="py-5 bg-light" style="padding-top: var(--section-spacing); padding-bottom: var(--section-spacing);">
-    <div class="container">
-      <div class="text-center mb-5">
-        <span class="text-primary fw-semibold">OUR TEAM</span>
-        <h2 class="section-title">Meet Our Experts</h2>
-        <p class="section-subtitle mx-auto">
-          Certified professionals dedicated to your success
-        </p>
-      </div>
-      <div class="row g-4">
-        <div class="col-lg-4 col-md-6">
-          <div class="modern-card team-card">
-            <div class="card-content">
-              <div class="team-image">
-                <img src="#" alt="Team Member">
-              </div>
-              <h3 class="team-name">Khyber Safi</h3>
-              <div class="team-role">Lead Network Engineer</div>
-              <div class="team-bio">
-                CompTIA Network+ and Security+ certified with over 8 years of experience 
-                in enterprise network design and implementation.
-              </div>
-              <div class="mt-3">
-                <span class="badge bg-primary me-2">Network+</span>
-                <span class="badge bg-primary">Security+</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="modern-card team-card">
-            <div class="card-content">
-              <div class="team-image">
-                <img src="#" alt="Team Member">
-              </div>
-              <h3 class="team-name">Ajmal Khan</h3>
-              <div class="team-role">Security Specialist</div>
-              <div class="team-bio">
-                Cybersecurity expert specializing in surveillance systems, access control, 
-                and comprehensive security solutions for modern businesses.
-              </div>
-              <div class="mt-3">
-                <span class="badge bg-primary me-2">Security+</span>
-                <span class="badge bg-primary">CCTV Pro</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="modern-card team-card">
-            <div class="card-content">
-              <div class="team-image">
-                <img src="#" alt="Team Member">
-              </div>
-              <h3 class="team-name">Khalid Safi</h3>
-              <div class="team-role">IT Support Manager</div>
-              <div class="team-bio">
-                Microsoft 365 certified professional with extensive experience in device 
-                support, troubleshooting, and IT service desk management.
-              </div>
-              <div class="mt-3">
-                <span class="badge bg-primary me-2">M365 Admin</span>
-                <span class="badge bg-primary">Network+</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> -->
-
-  <!-- Service Areas
-  <section class="py-5" style="padding-top: var(--section-spacing); padding-bottom: var(--section-spacing);">
-    <div class="container">
-      <div class="text-center mb-5">
-        <span class="text-primary fw-semibold">SERVICE REGIONS</span>
-        <h2 class="section-title">Where We Serve</h2>
-        <p class="section-subtitle mx-auto">
-          Providing expert IT solutions across the DMV area
-        </p>
-      </div>
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="service-area">
-            <i class="fas fa-city area-icon"></i>
-            <h4>Maryland</h4>
-            <p class="text-muted">Comprehensive IT services for businesses throughout Maryland</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="service-area">
-            <i class="fas fa-monument area-icon"></i>
-            <h4>Washington DC</h4>
-            <p class="text-muted">Enterprise-grade solutions for the nation's capital</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="service-area">
-            <i class="fas fa-university area-icon"></i>
-            <h4>Virginia</h4>
-            <p class="text-muted">Reliable IT support for Virginia's growing business community</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Testimonials Section
-  <section class="py-5 bg-light" style="padding-top: var(--section-spacing); padding-bottom: var(--section-spacing);">
-    <div class="container">
-      <div class="text-center mb-5">
-        <span class="text-primary fw-semibold">TESTIMONIALS</span>
-        <h2 class="section-title">What Our Clients Say</h2>
-        <p class="section-subtitle mx-auto">
-          Don't just take our word for it - hear from our satisfied clients
-        </p>
-      </div>
-      <div class="row g-4">
-        <div class="col-lg-4">
-          <div class="testimonial-card">
-            <div class="testimonial-text">
-              "NavSync transformed our network infrastructure with zero downtime. Their team is professional, knowledgeable, and always available when we need them."
-            </div>
-            <div class="client-info">
-              <div class="client-avatar">
-                <img src="img/testimonial-3.jpg" alt="Client" class="img-fluid">
-              </div>
-              <div class="client-details">
-                <h5>Jennifer Martinez</h5>
-                <p>Operations Director, TechCorp</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="testimonial-card">
-            <div class="testimonial-text">
-              "The security system implementation was seamless. NavSync's attention to detail and commitment to quality is exceptional."
-            </div>
-            <div class="client-info">
-              <div class="client-avatar">
-                <img src="img/testimonial-2.jpg" alt="Client" class="img-fluid">
-              </div>
-              <div class="client-details">
-                <h5>Robert Kim</h5>
-                <p>CEO, SecurePlus Inc.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="testimonial-card">
-            <div class="testimonial-text">
-              "Outstanding service desk support. Quick response times and effective solutions that keep our business running smoothly."
-            </div>
-            <div class="client-info">
-              <div class="client-avatar">
-                <img src="img/testimonial-1.jpg" alt="Client" class="img-fluid">
-              </div>
-              <div class="client-details">
-                <h5>Sarah Johnson</h5>
-                <p>IT Manager, GrowthLab</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> -->
-
   <!-- Final CTA Section -->
   <section class="cta-section">
     <div class="container">
@@ -650,7 +399,7 @@
           Let's discuss how NavSync Solutions can help your business achieve its technology goals.
         </p>
         <div class="cta-buttons">
-          <a href="contact.html" class="btn btn-light btn-lg px-5 py-3 rounded-pill fw-semibold">
+          <a href="contact.php" class="btn btn-light btn-lg px-5 py-3 rounded-pill fw-semibold">
             <i class="fas fa-calendar-check me-2"></i>Schedule Consultation
           </a>
           <a href="tel:+19168189115" class="btn btn-outline-light btn-lg px-5 py-3 rounded-pill fw-semibold">
@@ -661,8 +410,8 @@
     </div>
   </section>
 
-  <!-- Footer Injection -->
-  <footer id="footer-container"></footer>
+  <!-- Footer component -->  
+  <?php include 'includes/footer.php'; ?>
 
   <!-- Back to Top -->
   <a href="#" class="btn btn-secondary btn-square rounded-circle back-to-top">

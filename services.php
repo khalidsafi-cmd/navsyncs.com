@@ -7,7 +7,7 @@
   <!-- Meta -->
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
   <meta name="description" content="Explore NavSync Solutions services: Network Infrastructure, Security Solutions, Device Support, IT Service Desk, Business Solutions, and Home Technology." />
-  <link rel="canonical" href="https://navsyncs.com/services.html" />
+  <link rel="canonical" href="https://navsyncs.com/services.php" />
   <meta name="robots" content="index, follow" />
 
   <!-- Fonts & Icons -->
@@ -35,7 +35,7 @@
     "@type":"BreadcrumbList",
     "itemListElement":[
       {"@type":"ListItem","position":1,"name":"Home","item":"https://navsyncs.com/"},
-      {"@type":"ListItem","position":2,"name":"Services","item":"https://navsyncs.com/services.html"}
+      {"@type":"ListItem","position":2,"name":"Services","item":"https://navsyncs.com/services.php"}
     ]
   }
   </script>
@@ -113,8 +113,8 @@
     <div class="spinner-grow text-primary" role="status"></div>
   </div>
 
-  <!-- Navbar include -->
-  <nav id="navbar-container"></nav>
+  <!-- Navbar Component -->
+  <?php include 'includes/navbar.php'; ?>
 
           <!-- Page Header -->
           <div class="container-fluid page-header py-5">
@@ -122,7 +122,7 @@
               <h1 class="display-4 text-white mb-3 animated slideInDown">Services</h1>
               <nav aria-label="breadcrumb" class="animated slideInDown">
                 <ol class="breadcrumb justify-content-center mb-0">
-                  <li class="breadcrumb-item"><a class="text-white-50" href="index.html">Home</a></li>
+                  <li class="breadcrumb-item"><a class="text-white-50" href="index.php">Home</a></li>
                   <li class="breadcrumb-item text-white active" aria-current="page">Services</li>
                 </ol>
               </nav>
@@ -210,8 +210,8 @@
                 </div>
               </div>
               <div class="mt-3 d-flex gap-2">
-                <a href="contact.html" class="btn btn-secondary text-white rounded-pill px-4">Request a site survey</a>
-                <a href="index.html#services" class="btn btn-outline-primary rounded-pill px-4">Back to overview</a>
+                <a href="contact.php" class="btn btn-secondary text-white rounded-pill px-4">Request a site survey</a>
+                <a href="index.php#services" class="btn btn-outline-primary rounded-pill px-4">Back to overview</a>
               </div>
             </div>
           </div>
@@ -249,7 +249,7 @@
               </div>
               <div class="mt-3 d-flex gap-2">
                 <a href="#contact-cta" class="btn btn-secondary text-white rounded-pill px-4">Book a security consult</a>
-                <a href="index.html#services" class="btn btn-outline-primary rounded-pill px-4">Back to overview</a>
+                <a href="index.php#services" class="btn btn-outline-primary rounded-pill px-4">Back to overview</a>
               </div>
             </div>
           </div>
@@ -287,7 +287,7 @@
               </div>
               <div class="mt-3 d-flex gap-2">
                 <a href="#contact-cta" class="btn btn-secondary text-white rounded-pill px-4">Schedule device help</a>
-                <a href="index.html#services" class="btn btn-outline-primary rounded-pill px-4">Back to overview</a>
+                <a href="index.php#services" class="btn btn-outline-primary rounded-pill px-4">Back to overview</a>
               </div>
             </div>
           </div>
@@ -325,7 +325,7 @@
               </div>
               <div class="mt-3 d-flex gap-2">
                 <a href="#contact-cta" class="btn btn-secondary text-white rounded-pill px-4">Compare support plans</a>
-                <a href="index.html#services" class="btn btn-outline-primary rounded-pill px-4">Back to overview</a>
+                <a href="index.php#services" class="btn btn-outline-primary rounded-pill px-4">Back to overview</a>
               </div>
             </div>
           </div>
@@ -363,7 +363,7 @@
               </div>
               <div class="mt-3 d-flex gap-2">
                 <a href="#contact-cta" class="btn btn-secondary text-white rounded-pill px-4">Start a discovery call</a>
-                <a href="index.html#services" class="btn btn-outline-primary rounded-pill px-4">Back to overview</a>
+                <a href="index.php#services" class="btn btn-outline-primary rounded-pill px-4">Back to overview</a>
               </div>
             </div>
           </div>
@@ -401,7 +401,7 @@
               </div>
               <div class="mt-3 d-flex gap-2">
                 <a href="#contact-cta" class="btn btn-secondary text-white rounded-pill px-4">Get a home consult</a>
-                <a href="index.html#services" class="btn btn-outline-primary rounded-pill px-4">Back to overview</a>
+                <a href="index.php#services" class="btn btn-outline-primary rounded-pill px-4">Back to overview</a>
               </div>
             </div>
           </div>
@@ -416,7 +416,7 @@
             </div>
             <div class="col-md-auto d-flex gap-2">
               <a href="tel:+19168189115" class="btn btn-light rounded-pill px-4"><i class="fa fa-phone me-2"></i>Call +1 (916) 818-9115</a>
-              <a href="contact.html" class="btn btn-dark rounded-pill px-4"><i class="fa fa-envelope me-2"></i>Contact form</a>
+              <a href="contact.php" class="btn btn-dark rounded-pill px-4"><i class="fa fa-envelope me-2"></i>Contact form</a>
             </div>
           </div>
         </div>
@@ -425,8 +425,8 @@
     </div><!-- /row -->
   </section>
 
-  <!-- Footer include -->
-  <footer id="footer-container"></footer>
+  <!-- Footer component -->  
+  <?php include 'includes/footer.php'; ?>
 
   <!-- Back to top -->
   <a href="#" class="btn btn-secondary btn-square rounded-circle back-to-top"><i class="fa fa-arrow-up text-white"></i></a>

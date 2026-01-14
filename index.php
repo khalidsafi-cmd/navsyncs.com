@@ -63,13 +63,6 @@
         <!-- 6️⃣ Theme color for mobile address bar (Android Chrome, Windows) -->
         <meta name="theme-color" content="#0a74da">
 
-        <!-- Prefetching these items so it does not take long time to load -->
-        <link rel="prefetch" href="includes/navbar.html" as="fetch" crossorigin="anonymous">
-        <link rel="prefetch" href="includes/footer.html" as="fetch" crossorigin="anonymous">
-        <link rel="prefetch" href="services.html">
-        <link rel="prefetch" href="contact.html">
-
-
         <script type="application/ld+json">
         {
         "@context": "https://schema.org",
@@ -175,14 +168,6 @@
 
     </head>
 
-    <!--This is also for prefetching the items in the service page -->
-        <script>
-        (cb => ('requestIdleCallback' in window) ? requestIdleCallback(cb, {timeout:2000}) : setTimeout(cb, 0))(() => {
-            ['/includes/navbar.html','/includes/footer.html','/services.html','/contact.html','about.html']
-            .forEach(url => fetch(url, {credentials:'same-origin'}).catch(()=>{}));
-        });
-        </script>
-
     <!-- ! Add this to every future page -->
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-C5NHSS3MST"></script>
@@ -200,57 +185,8 @@
         </div>
         <!-- Spinner End -->
 
-  <!-- Navbar Start -->
-        <div class="container-fluid" style="background-color: whitesmoke;">
-            <div class="container">
-                <nav class="navbar navbar-light navbar-expand-lg py-sm-1">
-                    <a href="index.html" class="navbar-brand">
-                        <img src="img/logo.svg" class="logo" />
-                    </a>
-                    <button type="button" class="navbar-toggler bg-primary me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse bg-transparent" id="navbarCollapse">
-                        <div class="navbar-nav ms-auto mx-xl-auto p-0">
-                            <a href="index.html" class="nav-item nav-link">Home</a>
-                            <a href="about.html" class="nav-item nav-link">About</a>
-                        <div class="nav-item dropdown">
-                        <a href="services.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
-                                <div class="dropdown-menu rounded">
-                                    <a href="services.html#network" class="dropdown-item">Network Infrastructure</a>
-                                    <a href="services.html#security" class="dropdown-item">Security Solutions</a>
-                                    <a href="services.html#devices" class="dropdown-item">Device Support</a>
-                                    <a href="services.html#service-desk" class="dropdown-item">IT Service Desk</a>
-                                    <a href="services.html#business" class="dropdown-item">Business Solutions</a>
-                                    <a href="services.html#home-tech" class="dropdown-item">Home Technology</a>
-                                </div>
-                        </div>
-                            <a href="index.html#solutions" class="nav-item nav-link">Solutions</a>       
-                            <a href="contact.html" class="nav-item nav-link">Contact</a>
-                        </div>
-                    </div>
-                    <div class="d-none d-xl-flex flex-shrink-0">
-                        <div id="phone-tada" class="d-flex align-items-center justify-content-center me-4">
-                            <a href="tel:+19168189115" class="position-relative animated tada infinite">
-                                <i class="fa fa-phone-alt text-primary fa-2x"></i>
-                                <div class="position-absolute" style="top: -7px; left: 20px;">
-                                    <span><i class="fa fa-comment-dots text-secondary"></i></span>
-                                </div>
-                            </a>
-                        </div>
-                        <!--TODO -->
-                        <div class="d-flex flex-column pe-4 border-end">
-                            <span class="text-primary">Needed IT Support?</span>
-                           <a href="tel:+19168189115"><span class="text-primary">Call: +1 (916) 818-9115</span></a> 
-                        </div>
-                        <div class="d-flex align-items-center justify-content-center ms-4 ">
-                            <a href="#"><i class="bi bi-search fa-2x"></i> </a>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-        </div>
-        <!-- Navbar End -->
+        <!-- Navbar component -->
+        <?php include 'includes/navbar.php'; ?>
 
         <!-- TODO Change carousal images to match its specific slide -->
         <!-- Carousel Start -->
@@ -270,7 +206,7 @@
                                 <h6 class="text-white h4 animated fadeInUp">Expert IT Infrastructure</h6>
                                 <h1 class="text-white display-1 mb-4 animated fadeInRight">Reliable Network Solutions for Business</h1>
                                 <p class="mb-4 text-white fs-5 animated fadeInDown">We design, implement, and optimize wired and wireless networks that keep your business connected and productive.</p>
-                                <a href="services.html"><button type="button" class="px-4 py-sm-3 px-sm-5 btn btn-primary text-white rounded-pill carousel-content-btn1 animated fadeInLeft">Our Services</button></a>
+                                <a href="services.php"><button type="button" class="px-4 py-sm-3 px-sm-5 btn btn-primary text-white rounded-pill carousel-content-btn1 animated fadeInLeft">Our Services</button></a>
                                 <a href="#contact"><button type="button" class="px-4 py-sm-3 px-sm-5 btn btn-secondary rounded-pill carousel-content-btn2 animated fadeInRight">Free Consultation</button></a>
                             </div>
                         </div>
@@ -283,7 +219,7 @@
                                 <h6 class="text-white h4 animated fadeInUp">Advanced Protection</h6>
                                 <h1 class="text-white display-1 mb-4 animated fadeInLeft">Comprehensive Security Solutions</h1>
                                 <p class="mb-4 text-white fs-5 animated fadeInDown">From surveillance systems to intrusion detection, we protect your business assets with cutting-edge security technology.</p>
-                                <a href="services.html"><button type="button" class="px-4 py-sm-3 px-sm-5 btn btn-primary fw-bold rounded-pill carousel-content-btn1 animated fadeInLeft text-white">Security Services</button></a>
+                                <a href="services.php"><button type="button" class="px-4 py-sm-3 px-sm-5 btn btn-primary fw-bold rounded-pill carousel-content-btn1 animated fadeInLeft text-white">Security Services</button></a>
                                 <a href="#contact"><button type="button" class="px-4 py-sm-3 px-sm-5 btn btn-secondary rounded-pill carousel-content-btn2 animated fadeInRight">Get Protected</button></a>
                             </div>
                         </div>
@@ -296,7 +232,7 @@
                                 <h6 class="text-white h4 animated fadeInUp font-sans">Professional Support</h6>
                                 <h1 class="text-white display-1 mb-4 animated fadeInRight">24/7 IT Service Desk Support</h1>
                                 <p class="mb-4 text-white fs-5 animated fadeInDown">Our tiered support structure provides prompt remote assistance for all your technology needs, from basic troubleshooting to complex problem-solving.</p>
-                                <a href="services.html"><button type="button" class="px-4 py-sm-3 px-sm-5 btn btn-primary rounded-pill fw-bold carousel-content-btn1 animated fadeInLeft text-white">Support Plans</button></a>
+                                <a href="services.php"><button type="button" class="px-4 py-sm-3 px-sm-5 btn btn-primary rounded-pill fw-bold carousel-content-btn1 animated fadeInLeft text-white">Support Plans</button></a>
                                 <a href="#contact"><button type="button" class="px-4 py-sm-3 px-sm-5 btn btn-secondary rounded-pill carousel-content-btn2 animated fadeInRight">Request Support</button></a>
                             </div>
                         </div>
@@ -403,7 +339,7 @@
                                     <i class="fas fa-network-wired fa-7x mb-4 text-primary"></i>
                                     <h4 class="mb-3 card-title">Network Infrastructure</h4>
                                     <p class="mb-4">Design, implementation, and optimization of wired and wireless networks for seamless connectivity and business operations.</p>
-                                    <a href="services.html#network" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Learn More</a>
+                                    <a href="services.php#network" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Learn More</a>
                                 </div>
                             </div>
                         </div>
@@ -417,7 +353,7 @@
                                     <i class="fas fa-shield-alt fa-7x mb-4 text-primary"></i>
                                     <h4 class="mb-3">Security Solutions</h4>
                                     <p class="mb-4">Installation, configuration, and management of advanced security systems including surveillance cameras and intrusion detection.</p>
-                                    <a href="services.html#security" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Learn More</a>
+                                    <a href="services.php#security" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Learn More</a>
                                 </div>
                             </div>
                         </div>
@@ -431,7 +367,7 @@
                                     <i class="fas fa-print fa-7x mb-4 text-primary"></i>
                                     <h4 class="mb-3">Device Support</h4>
                                     <p class="mb-4">Setup, configuration, and maintenance of printers, peripherals, and other office equipment for optimal performance.</p>
-                                    <a href="services.html#devices" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Learn More</a>
+                                    <a href="services.php#devices" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Learn More</a>
                                 </div>
                             </div>
                         </div>
@@ -445,7 +381,7 @@
                                     <i class="fas fa-headset fa-7x mb-4 text-primary"></i>
                                     <h4 class="mb-3">IT Service Desk</h4>
                                     <p class="mb-4">Tiered support structure providing remote assistance for prompt issue resolution, from basic troubleshooting to complex problems.</p>
-                                    <a href="services.html#service-desk" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Learn More</a>
+                                    <a href="services.php#service-desk" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Learn More</a>
                                 </div>
                             </div>
                         </div>
@@ -459,7 +395,7 @@
                                     <i class="fas fa-briefcase fa-7x mb-4 text-primary"></i>
                                     <h4 class="mb-3">Business Solutions</h4>
                                     <p class="mb-4">Comprehensive IT infrastructure planning and implementation tailored to your business needs and growth objectives.</p>
-                                    <a href="services.html#business" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Learn More</a>
+                                    <a href="services.php#business" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Learn More</a>
                                 </div>
                             </div>
                         </div>
@@ -473,7 +409,7 @@
                                     <i class="fas fa-home fa-7x mb-4 text-primary"></i>
                                     <h4 class="mb-3">Home Technology</h4>
                                     <p class="mb-4">Smart home integration, network setup, and security solutions to protect and enhance your living environment.</p>
-                                    <a href="services.html#home-tech" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Learn More</a>
+                                    <a href="services.php#home-tech" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Learn More</a>
                                 </div>
                             </div>
                         </div>
@@ -692,63 +628,8 @@
         </section>
         <!-- Contact End -->
 
-
-        <!-- Footer Start -->
-        <div id="footer" class="container-fluid footer wow fadeIn" data-wow-delay=".3s">
-            <div class="container pt-5 pb-4">
-                <div class="row g-5">
-                    <div class="col-lg-3 col-md-6">
-                        <a href="index.html">
-                            <h1 class="text-primary fw-bold d-block">Nav<span class="text-secondary">sync</span> </h1>
-                        </a>
-                        <p class="mt-4 text-primary-light">Navsync Solutions delivers expert IT support and technology solutions tailored to homes and businesses. We ensure seamless technology integration, enhanced security, and optimized performance.</p>
-                        <div class="d-flex hightech-link">
-                            <a href="https://facebook.com/navsyncs" class="btn-light nav-fill btn btn-square rounded-circle me-2"><i class="fab fa-facebook-f text-primary"></i></a>
-                            <a href="https://twitter.com/navsyncs" class="btn-light nav-fill btn btn-square rounded-circle me-2"><i class="fab fa-twitter text-primary"></i></a>
-                            <a href="https://instagram.com/navsyncs" class="btn-light nav-fill btn btn-square rounded-circle me-2"><i class="fab fa-instagram text-primary"></i></a>
-                            <a href="https://linkedin.com/company/navsyncs" class="btn-light nav-fill btn btn-square rounded-circle me-0"><i class="fab fa-linkedin-in text-primary"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 quicklinks">
-                        <a href="#" class="h3 text-dark">Quick Links</a>
-                        <div class="mt-4 d-flex flex-column short-link text-dark">
-                            <a href="about.html" class="mb-2 text-dark"><i class="fas fa-angle-right me-2 text-dark"></i>About Us</a>
-                            <a href="contact.html" class="mb-2 text-dark"><i class="fas fa-angle-right me-2 text-dark"></i>Contact Us</a>
-                            <a href="services.html" class="mb-2 text-dark"><i class="fas fa-angle-right me-2 text-dark"></i>Our Services</a>
-                            <a href="index.html#solutions" class="mb-2 text-dark"><i class="fas fa-angle-right me-2 text-dark"></i>IT Solutions</a>
-                            <a href="404.html" class="mb-2 text-dark"><i class="fas fa-angle-right me-2 text-dark"></i>Latest News</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <a href="#" class="h3 text-dark">Support</a>
-                        <div class="mt-4 d-flex flex-column help-link">
-                            <a href="terms.html" class="mb-2 text-dark"><i class="fas fa-angle-right text-dark me-2"></i>Terms of Use</a>
-                            <a href="privacy.html" class="mb-2 text-dark"><i class="fas fa-angle-right text-dark me-2"></i>Privacy Policy</a>
-                            <a href="support.html" class="mb-2 text-dark"><i class="fas fa-angle-right text-dark me-2"></i>Help Center</a>
-                            <a href="faq.html" class="mb-2 text-dark"><i class="fas fa-angle-right text-dark me-2"></i>FAQs</a>
-                            <a href="#contact" class="mb-2 text-dark"><i class="fas fa-angle-right text-dark me-2"></i>Get Support</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <a href="#" class="h3 text-dark">Contact Us</a>
-                        <div class="text-white mt-4 d-flex flex-column contact-link">
-                            <a href="https://goo.gl/maps/Zd4BCynmTb98ivUJ6" target="_blank" class="pb-3 text-dark border-bottom border-dark"><i class="fas fa-map-marker-alt text-dark me-2"></i>Maryland, USA</a>
-                            <a href="tel:+19168189115" class="py-3 text-dark border-bottom border-dark"><i class="fas fa-phone-alt text-dark me-2"></i> +1 (916) 818-9115</a>
-                            <a href="mailto:info@navsyncs.com" class="py-3 text-dark border-bottom border-dark"><i class="fas fa-envelope text-dark me-2"></i> info@navsyncs.com</a>
-                        </div>
-                    </div>
-                </div>
-                <hr class="text-light mt-5 mb-4">
-                <div class="row">
-                    <div class="col-md-6 text-center text-md-start">
-                        <span class="text-light"><a href="index.html" class="text-secondary"><i class="fas fa-copyright text-secondary me-2"></i>Navsync Solutions</a>, All rights reserved.</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Footer End -->
-
-
+        <!-- Footer component -->  
+        <?php include 'includes/footer.php'; ?>
 
         <!-- Back to Top -->
         <a href="#" class="btn btn-secondary btn-square rounded-circle back-to-top"><i class="fa fa-arrow-up text-white"></i></a>

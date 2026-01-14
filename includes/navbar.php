@@ -2,7 +2,7 @@
         <div class="container-fluid" style="background-color: whitesmoke;">
             <div class="container">
                 <nav class="navbar navbar-light navbar-expand-lg py-sm-1">
-                    <a href="index.html" class="navbar-brand">
+                    <a href="index.php" class="navbar-brand">
                         <img src="img/logo.svg" class="logo" />
                     </a>
                     <button type="button" class="navbar-toggler bg-primary me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -10,21 +10,21 @@
                     </button>
                     <div class="collapse navbar-collapse bg-transparent" id="navbarCollapse">
                         <div class="navbar-nav ms-auto mx-xl-auto p-0">
-                            <a href="index.html" class="nav-item nav-link">Home</a>
-                            <a href="about.html" class="nav-item nav-link">About</a>
+                            <a href="index.php" class="nav-item nav-link">Home</a>
+                            <a href="about.php" class="nav-item nav-link">About</a>
                         <div class="nav-item dropdown">
-                        <a href="services.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
+                        <a href="services.php" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
                                 <div class="dropdown-menu rounded">
-                                    <a href="services.html#network" class="dropdown-item">Network Infrastructure</a>
-                                    <a href="services.html#security" class="dropdown-item">Security Solutions</a>
-                                    <a href="services.html#devices" class="dropdown-item">Device Support</a>
-                                    <a href="services.html#service-desk" class="dropdown-item">IT Service Desk</a>
-                                    <a href="services.html#business" class="dropdown-item">Business Solutions</a>
-                                    <a href="services.html#home-tech" class="dropdown-item">Home Technology</a>
+                                    <a href="services.php#network" class="dropdown-item">Network Infrastructure</a>
+                                    <a href="services.php#security" class="dropdown-item">Security Solutions</a>
+                                    <a href="services.php#devices" class="dropdown-item">Device Support</a>
+                                    <a href="services.php#service-desk" class="dropdown-item">IT Service Desk</a>
+                                    <a href="services.php#business" class="dropdown-item">Business Solutions</a>
+                                    <a href="services.php#home-tech" class="dropdown-item">Home Technology</a>
                                 </div>
                         </div>
-                            <a href="index.html#solutions" class="nav-item nav-link">Solutions</a>       
-                            <a href="contact.html" class="nav-item nav-link">Contact</a>
+                            <a href="index.php#solutions" class="nav-item nav-link">Solutions</a>       
+                            <a href="contact.php" class="nav-item nav-link">Contact</a>
                         </div>
                     </div>
                     <div class="d-none d-xl-flex flex-shrink-0">
@@ -36,7 +36,6 @@
                                 </div>
                             </a>
                         </div>
-                        <!--TODO -->
                         <div class="d-flex flex-column pe-4 border-end">
                             <span class="text-primary">Needed IT Support?</span>
                            <a href="tel:+19168189115"><span class="text-primary">Call: +1 (916) 818-9115</span></a> 

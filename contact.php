@@ -8,14 +8,14 @@
         <!-- Meta -->
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="Get in touch with NavSync Solutions for IT support, security, networking, and service desk. Call, email, or send a message." />
-        <link rel="canonical" href="https://navsyncs.com/contact.html" />
+        <link rel="canonical" href="https://navsyncs.com/contact.php" />
         <meta name="robots" content="index,follow" />
         <meta name="theme-color" content="#0a74da" />
 
         <!-- OpenGraph -->
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Contact NavSync Solutions" />
-        <meta property="og:url" content="https://navsyncs.com/contact.html" />
+        <meta property="og:url" content="https://navsyncs.com/contact.php" />
         <meta property="og:description" content="Call, email, or message NavSync Solutions—your IT partner for homes and businesses." />
         <meta property="og:image" content="https://navsyncs.com/img/social-media-preview.jpg" />
 
@@ -37,10 +37,6 @@
         <link rel="icon" type="image/png" sizes="32x32" href="img/favicon_32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="img/favicon_16x16.png" />
 
-        <!-- Prefetch common partials so Services loads faster later -->
-        <link rel="prefetch" href="/includes/navbar.html" as="fetch" crossorigin="anonymous" />
-        <link rel="prefetch" href="/includes/footer.html" as="fetch" crossorigin="anonymous" />
-
         <!-- Breadcrumbs JSON-LD -->
         <script type="application/ld+json">
         {
@@ -48,7 +44,7 @@
             "@type": "BreadcrumbList",
             "itemListElement": [
             {"@type":"ListItem","position":1,"name":"Home","item":"https://navsyncs.com/"},
-            {"@type":"ListItem","position":2,"name":"Contact","item":"https://navsyncs.com/contact.html"}
+            {"@type":"ListItem","position":2,"name":"Contact","item":"https://navsyncs.com/contact.php"}
             ]
         }
         </script>
@@ -72,8 +68,8 @@
         </div>
         <!-- Spinner End -->
 
-        <!-- Navbar injection -->
-        <nav id="navbar-container"></nav>
+        <!-- Navbar component -->
+        <?php include 'includes/navbar.php'; ?>
 
         
           <!-- Page Header -->
@@ -82,7 +78,7 @@
               <h1 class="display-4 text-white mb-3 animated slideInDown">Contact Us</h1>
               <nav aria-label="breadcrumb" class="animated slideInDown">
                 <ol class="breadcrumb justify-content-center mb-0">
-                  <li class="breadcrumb-item"><a class="text-white-50" href="index.html">Home</a></li>
+                  <li class="breadcrumb-item"><a class="text-white-50" href="index.php">Home</a></li>
                   <li class="breadcrumb-item text-white active" aria-current="page">Contact Us</li>
                 </ol>
               </nav>
@@ -228,8 +224,8 @@
         </section>
         <!-- Contact End -->
 
-
-        <footer id="footer-container"></footer>
+        <!-- Footer component -->  
+        <?php include 'includes/footer.php'; ?>
 
         <!-- Back to Top -->
         <a href="#" class="btn btn-secondary btn-square rounded-circle back-to-top"><i class="fa fa-arrow-up text-white"></i></a>

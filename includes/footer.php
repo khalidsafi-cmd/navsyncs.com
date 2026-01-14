@@ -3,7 +3,7 @@
             <div class="container pt-5 pb-4">
                 <div class="row g-5">
                     <div class="col-lg-3 col-md-6">
-                        <a href="index.html">
+                        <a href="index.php">
                             <h1 class="text-primary fw-bold d-block">Nav<span class="text-secondary">sync</span> </h1>
                         </a>
                         <p class="mt-4 text-primary-light">Navsync Solutions delivers expert IT support and technology solutions tailored to homes and businesses. We ensure seamless technology integration, enhanced security, and optimized performance.</p>
@@ -17,21 +17,21 @@
                     <div class="col-lg-3 col-md-6 quicklinks">
                         <a href="#" class="h3 text-dark">Quick Links</a>
                         <div class="mt-4 d-flex flex-column short-link text-dark">
-                            <a href="about.html" class="mb-2 text-dark"><i class="fas fa-angle-right me-2 text-dark"></i>About Us</a>
-                            <a href="contact.html" class="mb-2 text-dark"><i class="fas fa-angle-right me-2 text-dark"></i>Contact Us</a>
-                            <a href="services.html" class="mb-2 text-dark"><i class="fas fa-angle-right me-2 text-dark"></i>Our Services</a>
-                            <a href="index.html#solutions" class="mb-2 text-dark"><i class="fas fa-angle-right me-2 text-dark"></i>IT Solutions</a>
-                            <a href="404.html" class="mb-2 text-dark"><i class="fas fa-angle-right me-2 text-dark"></i>Latest News</a>
+                            <a href="about.php" class="mb-2 text-dark"><i class="fas fa-angle-right me-2 text-dark"></i>About Us</a>
+                            <a href="contact.php" class="mb-2 text-dark"><i class="fas fa-angle-right me-2 text-dark"></i>Contact Us</a>
+                            <a href="services.php" class="mb-2 text-dark"><i class="fas fa-angle-right me-2 text-dark"></i>Our Services</a>
+                            <a href="index.php#solutions" class="mb-2 text-dark"><i class="fas fa-angle-right me-2 text-dark"></i>IT Solutions</a>
+                            <a href="404.php" class="mb-2 text-dark"><i class="fas fa-angle-right me-2 text-dark"></i>Latest News</a>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <a href="#" class="h3 text-dark">Support</a>
                         <div class="mt-4 d-flex flex-column help-link">
-                            <a href="terms.html" class="mb-2 text-dark"><i class="fas fa-angle-right text-dark me-2"></i>Terms of Use</a>
-                            <a href="privacy.html" class="mb-2 text-dark"><i class="fas fa-angle-right text-dark me-2"></i>Privacy Policy</a>
-                            <a href="support.html" class="mb-2 text-dark"><i class="fas fa-angle-right text-dark me-2"></i>Help Center</a>
-                            <a href="faq.html" class="mb-2 text-dark"><i class="fas fa-angle-right text-dark me-2"></i>FAQs</a>
-                            <a href="#contact" class="mb-2 text-dark"><i class="fas fa-angle-right text-dark me-2"></i>Get Support</a>
+                            <a href="terms.php" class="mb-2 text-dark"><i class="fas fa-angle-right text-dark me-2"></i>Terms of Use</a>
+                            <a href="privacy.php" class="mb-2 text-dark"><i class="fas fa-angle-right text-dark me-2"></i>Privacy Policy</a>
+                            <a href="support.php" class="mb-2 text-dark"><i class="fas fa-angle-right text-dark me-2"></i>Help Center</a>
+                            <a href="faq.php" class="mb-2 text-dark"><i class="fas fa-angle-right text-dark me-2"></i>FAQs</a>
+                            <a href="#contact.php" class="mb-2 text-dark"><i class="fas fa-angle-right text-dark me-2"></i>Get Support</a>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
@@ -46,7 +46,7 @@
                 <hr class="text-light mt-5 mb-4">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start">
-                        <span class="text-light"><a href="index.html" class="text-secondary"><i class="fas fa-copyright text-secondary me-2"></i>Navsync Solutions</a>, All rights reserved.</span>
+                        <span class="text-light"><a href="index.php" class="text-secondary"><i class="fas fa-copyright text-secondary me-2"></i>Navsync Solutions</a>, All rights reserved.</span>
                     </div>
                 </div>
             </div>

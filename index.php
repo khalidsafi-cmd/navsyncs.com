@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+    <meta charset="utf-8">
+    <title>NavSync Solutions | IT Services & Solutions for Homes and Businesses</title>
+
+        <!-- Meta Tags for better SEO -->
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="IT support, network infrastructure, security solutions, device support, IT service desk, business IT services, home technology solutions" name="keywords">
+        <meta content="NavSync Solutions delivers expert IT support and technology solutions tailored to homes and businesses. Our services include network infrastructure, security solutions, device support, and IT service desk." name="description">
+        <meta name="author" content="https://github.com/khalidsafi-cmd">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+
+        <!-- Open Graph / Facebook / LinkedIn -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://navsyncs.com/">
+        <meta property="og:title" content="NavSync Solutions - Reliable IT solutions for Homes and Businesses">
+        <meta property="og:description" content="NavSync Solutions delivers expert IT support and technology solutions tailored to homes and businesses. Our services include network infrastructure, security solutions, device support, and IT service desk.">
+        <meta property="og:image" content="https://navsyncs.com/img/social-media-preview.jpg">
+        <meta property="og:image:alt" content="Navsync Solutions logo with symbolism of campus, and navigation">
+        <meta property="og:site_name" content="NavSync Solutions">
+        <meta property="og:locale" content="en_US">
+        <meta property="og:image:width" content="1200">
+        <meta property="og:image:height" content="630">
+
+        <!-- Canonical URL -->
+        <link rel="canonical" href="https://navsyncs.com/">
+        <meta name="robots" content="index, follow">
+
+        
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Saira:wght@500;600;700&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+
+        <!-- FAVICON -->
+
+        <!-- 1️⃣ Modern browsers: scalable vector favicon -->
+        <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+
+        <!-- 2️⃣ Fallback PNGs for legacy or strict-size browsers -->
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon_32x32.png.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="img/favicon_16x16.png">
+        <link rel="icon" type="image/png" sizes="48x48" href="img/favicon_48x48.png">
+        <link rel="icon" type="image/png" sizes="64x64" href="img/favicon_64x64.png">
+        <link rel="icon" type="image/png" sizes="180x180" href="img/favicon_180x180.png">
+
+        <!-- 6️⃣ Theme color for mobile address bar (Android Chrome, Windows) -->
+        <meta name="theme-color" content="#0a74da">
+
+        <script type="application/ld+json">
+        {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+            "@type": "WebSite",
+            "@id": "https://navsyncs.com/#website",
+            "url": "https://navsyncs.com/",
+            "name": "NavSync Solutions",
+            "inLanguage": "en",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://navsyncs.com/?s={search_term_string}",
+                "query-input": "required name=search_term_string"
+            }
+            },
+            {
+            "@type": ["Organization", "ProfessionalService"],
+            "@id": "https://navsyncs.com/#org",
+            "name": "NavSync Solutions",
+            "url": "https://navsyncs.com/",
+            "description": "IT support and technology solutions for homes and businesses: network infrastructure, security systems, device support, and service desk.",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://navsyncs.com/img/logo.svg",
+                "width": 512,
+                "height": 512
+            },
+            "image": "https://navsyncs.com/img/social-media-preview.jpg",
+            "email": "info@navsyncs.com",
+            "areaServed": ["US-MD","US-DC","US-VA"],
+            "availableLanguage": ["en"],
+            "sameAs": [
+                "https://www.facebook.com/navsyncs",
+                "https://www.instagram.com/navsyncs",
+                "https://www.linkedin.com/company/navsyncs",
+                "https://x.com/navsyncs"
+            ],
+            "contactPoint": [
+                {
+                "@type": "ContactPoint",
+                "contactType": "customer support",
+                "email": "services@navsyncs.com",
+                "availableLanguage": ["en"],
+                "areaServed": ["US-MD","US-DC","US-VA"]
+                }
+            ],
+            "knowsAbout": [
+                "Network setup and optimization",
+                "Wi-Fi troubleshooting",
+                "Firewall and router configuration",
+                "CCTV installation",
+                "Endpoint protection",
+                "Microsoft 365 support",
+                "Backup and data recovery",
+                "IT service desk"
+            ],
+            "hasOfferCatalog": {
+                "@type": "OfferCatalog",
+                "name": "IT Services",
+                "itemListElement": [
+                {
+                    "@type": "OfferCatalog",
+                    "name": "Network Infrastructure",
+                    "itemListElement": [
+                    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Home & Office Network Setup" } },
+                    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Wi-Fi Optimization & Coverage" } },
+                    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Router/Firewall Configuration" } }
+                    ]
+                },
+                {
+                    "@type": "OfferCatalog",
+                    "name": "Security Solutions",
+                    "itemListElement": [
+                    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Endpoint Protection & Hardening" } },
+                    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "CCTV & Access Control Setup" } }
+                    ]
+                },
+                {
+                    "@type": "OfferCatalog",
+                    "name": "Device Support & Service Desk",
+                    "itemListElement": [
+                    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "PC/Mac Setup & Troubleshooting" } },
+                    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Microsoft 365 Support" } },
+                    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Backup & Data Recovery" } }
+                    ]
+                }
+                ]
+            }
+            },
+            {
+            "@type": "BreadcrumbList",
+            "@id": "https://navsyncs.com/#breadcrumbs",
+            "itemListElement": [
+                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://navsyncs.com/" },
+                { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://navsyncs.com/services/" },
+                { "@type": "ListItem", "position": 3, "name": "Contact", "item": "https://navsyncs.com/contact/" }
+            ]
+            }
+        ]
+        }
+        </script>
+
+    </head>
+
+    <!-- ! Add this to every future page -->
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-C5NHSS3MST"></script>
+            <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-C5NHSS3MST');
+        </script>
+    <body style="overflow-x: hidden;">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" role="status"></div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Navbar component -->
+        <?php include 'includes/navbar.php'; ?>
+
+        <!-- TODO Change carousal images to match its specific slide -->
+        <!-- Carousel Start -->
+        <div class="container-fluid px-0">
+            <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true" aria-label="First slide"></li>
+                    <li data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Second slide"></li>
+                    <li data-bs-target="#carouselId" data-bs-slide-to="2" aria-label="Third slide"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                    <!-- Slide 1: Network Infrastructure -->
+                    <div class="carousel-item active">
+                        <img src="img/carousel-1.webp" class="img-fluid" alt="Network Infrastructure Solutions">
+                        <div class="carousel-caption">
+                            <div class="container carousel-content">
+                                <h6 class="text-white h4 animated fadeInUp">Expert IT Infrastructure</h6>
+                                <h1 class="text-white display-1 mb-4 animated fadeInRight">Reliable Network Solutions for Business</h1>
+                                <p class="mb-4 text-white fs-5 animated fadeInDown">We design, implement, and optimize wired and wireless networks that keep your business connected and productive.</p>
+                                <a href="services.php"><button type="button" class="px-4 py-sm-3 px-sm-5 btn btn-primary text-white rounded-pill carousel-content-btn1 animated fadeInLeft">Our Services</button></a>
+                                <a href="#contact"><button type="button" class="px-4 py-sm-3 px-sm-5 btn btn-secondary rounded-pill carousel-content-btn2 animated fadeInRight">Free Consultation</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 2: Security Solutions -->
+                    <div class="carousel-item">
+                        <img src="img/carousel-2.webp" class="img-fluid" alt="Security Solutions">
+                        <div class="carousel-caption">
+                            <div class="container carousel-content">
+                                <h6 class="text-white h4 animated fadeInUp">Advanced Protection</h6>
+                                <h1 class="text-white display-1 mb-4 animated fadeInLeft">Comprehensive Security Solutions</h1>
+                                <p class="mb-4 text-white fs-5 animated fadeInDown">From surveillance systems to intrusion detection, we protect your business assets with cutting-edge security technology.</p>
+                                <a href="services.php"><button type="button" class="px-4 py-sm-3 px-sm-5 btn btn-primary fw-bold rounded-pill carousel-content-btn1 animated fadeInLeft text-white">Security Services</button></a>
+                                <a href="#contact"><button type="button" class="px-4 py-sm-3 px-sm-5 btn btn-secondary rounded-pill carousel-content-btn2 animated fadeInRight">Get Protected</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 3: IT Support -->
+                    <div class="carousel-item">
+                        <img src="img/carousel-3.webp" class="img-fluid" alt="IT Support Services">
+                        <div class="carousel-caption">
+                            <div class="container carousel-content">
+                                <h6 class="text-white h4 animated fadeInUp font-sans">Professional Support</h6>
+                                <h1 class="text-white display-1 mb-4 animated fadeInRight">24/7 IT Service Desk Support</h1>
+                                <p class="mb-4 text-white fs-5 animated fadeInDown">Our tiered support structure provides prompt remote assistance for all your technology needs, from basic troubleshooting to complex problem-solving.</p>
+                                <a href="services.php"><button type="button" class="px-4 py-sm-3 px-sm-5 btn btn-primary rounded-pill fw-bold carousel-content-btn1 animated fadeInLeft text-white">Support Plans</button></a>
+                                <a href="#contact"><button type="button" class="px-4 py-sm-3 px-sm-5 btn btn-secondary rounded-pill carousel-content-btn2 animated fadeInRight">Request Support</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <!-- Carousel End -->
+
+        <!-- Fact Start -->
+            <div class="container-fluid py-5 facts">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 wow fadeIn" data-wow-delay=".1s">
+                            <div class="d-flex counter">
+                                <h1 class="text-primary counter-value">100</h1>
+                                <h5 class="ms-4 text-white mt-1">Problems Solved for Our Clients</h5>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 wow fadeIn" data-wow-delay=".3s">
+                            <div class="d-flex counter">
+                                <h1 class="text-primary counter-value">24</h1>
+                                <h5 class="ms-4 text-white mt-1">Hour IT Support Availability</h5>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 wow fadeIn" data-wow-delay=".5s">
+                            <div class="d-flex counter">
+                                <h1 class="text-primary counter-value">98</h1>
+                                <h5 class="ms-4 text-white mt-1">% Client Satisfaction Rate</h5>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 wow fadeIn" data-wow-delay=".7s">
+                            <div class="d-flex counter">
+                                <h1 class="text-primary counter-value">1</h1>
+                                <h5 class="ms-5 text-white mt-1">Hour Average Response Time</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <!-- About Start -->
+        <section id="about" class="container-fluid py-5 my-5">
+            <div class="container pt-5">
+                <div class="row g-5">
+                    <div class="col-lg-5 col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".3s">
+                        <div class="h-100 position-relative">
+                            <img src="img/about-1.jpg" class="img-fluid w-75 rounded" alt="Navsync Solutions IT Team" style="margin-bottom: 25%;">
+                            <div class="position-absolute w-75" style="top: 25%; left: 25%;">
+                                <img src="img/about-2.jpg" class="img-fluid w-100 rounded" alt="Navsync Solutions Network Infrastructure">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".5s">
+                        <h5 class="text-primary">About Navsync Solutions</h5>
+                        <h1 class="mb-4">Your Trusted Partner for Innovative IT Solutions</h1>
+                        <p>Navsync Solutions delivers expert IT support and technology solutions tailored to both homes and businesses. Founded by industry professionals with a passion for technology, we understand the critical role that reliable IT infrastructure plays in your daily operations and success.</p>
+                        <p class="mb-4">Our comprehensive services encompass network design and implementation, advanced security systems, device support, and responsive IT service desk solutions. We pride ourselves on building long-term relationships with our clients by providing personalized service that addresses your unique technology challenges.</p>
+                        
+                        <div class="row mb-4">
+                            <div class="col-sm-6">
+                                <ul class="list-unstyled">
+                                    <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Network Infrastructure</li>
+                                    <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Security Solutions</li>
+                                    <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Device Support</li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-6">
+                                <ul class="list-unstyled">
+                                    <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> IT Service Desk</li>
+                                    <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Business Solutions</li>
+                                    <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Home Technology</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About End -->
+
+
+        <!-- Services Start -->
+        <section id="services" class="container-fluid services mb-5">
+            <div class="container">
+                <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
+                    <h5 class="text-primary">Our Services</h5>
+                    <h1>IT Solutions Tailored for Your Home or Business</h1>
+                </div>
+                <div class="row g-5 services-inner">
+                    <!-- Network Infrastructure -->
+                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
+                        <div class="services-item bg-light">
+                            <div class="p-4 text-center services-content">
+                                <div class="services-content-icon">
+                                    <i class="fas fa-network-wired fa-7x mb-4 text-primary"></i>
+                                    <h4 class="mb-3 card-title">Network Infrastructure</h4>
+                                    <p class="mb-4">Design, implementation, and optimization of wired and wireless networks for seamless connectivity and business operations.</p>
+                                    <a href="services.php#network" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Security Solutions -->
+                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
+                        <div class="services-item bg-light">
+                            <div class="p-4 text-center services-content">
+                                <div class="services-content-icon">
+                                    <i class="fas fa-shield-alt fa-7x mb-4 text-primary"></i>
+                                    <h4 class="mb-3">Security Solutions</h4>
+                                    <p class="mb-4">Installation, configuration, and management of advanced security systems including surveillance cameras and intrusion detection.</p>
+                                    <a href="services.php#security" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Device Support -->
+                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
+                        <div class="services-item bg-light">
+                            <div class="p-4 text-center services-content">
+                                <div class="services-content-icon">
+                                    <i class="fas fa-print fa-7x mb-4 text-primary"></i>
+                                    <h4 class="mb-3">Device Support</h4>
+                                    <p class="mb-4">Setup, configuration, and maintenance of printers, peripherals, and other office equipment for optimal performance.</p>
+                                    <a href="services.php#devices" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- IT Service Desk -->
+                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
+                        <div class="services-item bg-light">
+                            <div class="p-4 text-center services-content">
+                                <div class="services-content-icon">
+                                    <i class="fas fa-headset fa-7x mb-4 text-primary"></i>
+                                    <h4 class="mb-3">IT Service Desk</h4>
+                                    <p class="mb-4">Tiered support structure providing remote assistance for prompt issue resolution, from basic troubleshooting to complex problems.</p>
+                                    <a href="services.php#service-desk" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Business Solutions -->
+                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
+                        <div class="services-item bg-light">
+                            <div class="p-4 text-center services-content">
+                                <div class="services-content-icon">
+                                    <i class="fas fa-briefcase fa-7x mb-4 text-primary"></i>
+                                    <h4 class="mb-3">Business Solutions</h4>
+                                    <p class="mb-4">Comprehensive IT infrastructure planning and implementation tailored to your business needs and growth objectives.</p>
+                                    <a href="services.php#business" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Home Technology -->
+                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
+                        <div class="services-item bg-light">
+                            <div class="p-4 text-center services-content">
+                                <div class="services-content-icon">
+                                    <i class="fas fa-home fa-7x mb-4 text-primary"></i>
+                                    <h4 class="mb-3">Home Technology</h4>
+                                    <p class="mb-4">Smart home integration, network setup, and security solutions to protect and enhance your living environment.</p>
+                                    <a href="services.php#home-tech" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Services End -->
+
+
+
+        <!-- TODO add in hover effect a blur transparent box-->
+        <!-- Project Start -->
+        <section id="solutions" class="container-fluid project py-5 mb-5">
+            <div class="container">
+                <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
+                    <h5 class="text-primary">Our Work</h5>
+                    <h1>Recently Completed IT Solutions</h1>
+                </div>
+                <div class="row g-5">
+                    <!-- Project 1: Network Infrastructure -->
+                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
+                        <div class="project-item">
+                            <div class="project-img">
+                                <img src="img/project-1.jpg" class="img-fluid w-100 rounded" alt="Office Network Installation">
+                                <div class="project-content">
+                                    <a href="#" class="text-center">
+                                        <h4 class="text-primary">Network Infrastructure</h4>
+                                        <p class="m-0 text-secondary">Corporate Office Setup</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 2: Security System -->
+                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
+                        <div class="project-item">
+                            <div class="project-img">
+                                <img src="img/project-2.jpg" class="img-fluid w-100 rounded" alt="Security System Installation">
+                                <div class="project-content">
+                                    <a href="#" class="text-center">
+                                        <h4 class="text-primary">Security Solutions</h4>
+                                        <p class="m-0 text-secondary">Surveillance System</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 3: Device Support -->
+                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
+                        <div class="project-item">
+                            <div class="project-img">
+                                <img src="img/project-3.jpg" class="img-fluid w-100 rounded" alt="Office Equipment Setup">
+                                <div class="project-content">
+                                    <a href="#" class="text-center">
+                                        <h4 class="text-primary">Device Support</h4>
+                                        <p class="m-0 text-secondary">Multi-function Printer Setup</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 4: Business IT Support -->
+                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
+                        <div class="project-item">
+                            <div class="project-img">
+                                <img src="img/project-4.jpg" class="img-fluid w-100 rounded" alt="IT Support Services">
+                                <div class="project-content">
+                                    <a href="#" class="text-center">
+                                        <h4 class="text-primary">IT Service Desk</h4>
+                                        <p class="m-0 text-secondary">Business IT Support</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 5: Wireless Network -->
+                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
+                        <div class="project-item">
+                            <div class="project-img">
+                                <img src="img/project-5.jpg" class="img-fluid w-100 rounded" alt="Wireless Network Installation">
+                                <div class="project-content">
+                                    <a href="#" class="text-center">
+                                        <h4 class="text-primary">Wireless Solutions</h4>
+                                        <p class="m-0 text-secondary">Enterprise WiFi Deployment</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 6: Home Technology -->
+                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
+                        <div class="project-item">
+                            <div class="project-img">
+                                <img src="img/project-6.jpg" class="img-fluid w-100 rounded" alt="Smart Home Setup">
+                                <div class="project-content">
+                                    <a href="#" class="text-center">
+                                        <h4 class="text-primary">Home Technology</h4>
+                                        <p class="m-0 text-secondary">Residential Security & Network</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Project End -->
+
+        <!-- Contact Start -->
+        <section id="contact" class="container-fluid py-5 mb-0">
+        <div class="container">
+            <div class="text-center mx-auto pb-4 wow fadeIn" data-wow-delay=".2s" style="max-width:620px">
+            <h5 class="text-primary">Get In Touch</h5>
+            <h1 class="mb-3">Tell us what you need—we’ll help.</h1>
+            <p class="text-muted">
+                Prefer email or phone? Use the quick options below, or send us a message.
+            </p>
+            </div>
+
+            <div class="contact-detail position-relative pb-1 p-md-5">
+            <!-- Form & Map Row -->
+            <div class="row g-4 g-md-5">
+                <!-- FORM: left on large, top on small -->
+                <div class="col-12 col-lg-6 order-1 order-lg-1 wow fadeIn" data-wow-delay=".5s">
+                <form action="https://api.web3forms.com/submit" method="POST" id="contactForm"class="p-3 p-md-5 rounded contact-form">
+                    <input   type="hidden"   name="access_key"  value="e7858307-9fa8-46a0-95f3-8fa41101c5a4"/>
+
+                    <input  type="hidden"  name="subject"  value="New Contact Form Submission from Navsyncs.com"/>
+                    
+                    <input  type="hidden"  name="from_name" value="Navsyncs.com Contact Form" />
+
+                    <div class="mb-3">
+                    <input type="text" name="name" class="form-control border-0 py-3" placeholder="Your Name" required/>
+                    </div>
+                    <div class="mb-3">
+                    <input  type="email"      name="email"   class="form-control border-0 py-3"  placeholder="Your Email"   required />
+                    </div>
+                    <div class="mb-3">
+                    <input type="text"    name="project"  class="form-control border-0 py-3" placeholder="Project"/>
+                    </div>
+                    <div class="mb-4">
+                    <textarea  class="w-100 form-control border-0 py-3"  name="message"  rows="5"  placeholder="Message" required></textarea>
+                    </div>
+
+                    <div class="text-start">
+                    <button class="btn bg-primary text-white py-3 px-4 w-100 rounded-pill" type="submit"  id="submitButton">Send Message
+                    </button>
+                    <div id="successMessage"  class="mt-3 text-center" style="display: none;">
+                        <span class="text-danger fw-bold">✓ Message sent successfully!</span>
+                    </div>
+                    </div>
+                </form>
+                </div>
+
+                <!-- MAP: right on large, bottom on small -->
+                <div class="col-12 col-lg-6 order-2 order-lg-2 wow fadeIn" data-wow-delay=".3s">
+                <div class="p-3 p-md-5 h-100 rounded contact-map">
+                    <iframe
+                    class="rounded w-100 h-100"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24838.791265772957!2d-76.7947003!3d38.8196894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7941f39507a05%3A0xb9c155beb79bcc95!2sUpper%20Marlboro%2C%20MD%2020772%2C%20USA!5e0!3m2!1sen!2sus!4v1694123456789!5m2!1sen!2sus"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                </div>
+            </div>
+
+            <!-- Contact Info Boxes -->
+            <div class="contact-detail position-relative pt-3 p-md-5 pb-md-0">
+                <div class="row g-4 g-md-5 mb-0 justify-content-center">
+                <div class="col-12 col-md-6 col-xl-4 wow fadeIn" data-wow-delay=".3s">
+                    <div class="d-flex bg-light p-3 rounded h-100">
+                    <div class="flex-shrink-0 btn-square bg-secondary rounded-circle" style="width: 50px; height: 50px;">
+                        <i class="fas fa-map-marker-alt text-white"></i>
+                    </div>
+                    <div class="ms-3">
+                        <h4 class="text-primary h5">Address</h4>
+                        <a href="https://maps.app.goo.gl/Rcn92xyAJPkujttz9" target="_blank" class="h6 mb-0">MaryLand, USA</a>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-xl-4 wow fadeIn" data-wow-delay=".5s">
+                    <div class="d-flex bg-light p-3 rounded h-100">
+                    <div class="flex-shrink-0 btn-square bg-secondary rounded-circle" style="width: 50px; height: 50px;">
+                        <i class="fa fa-phone text-white"></i>
+                    </div>
+                    <div class="ms-3">
+                        <h4 class="text-primary h5">Call Us</h4>
+                        <a class="h6 mb-0" href="tel:+19168189115" target="_blank">+1 (916) 818-9115</a>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4 wow fadeIn" data-wow-delay=".7s">
+                    <div class="d-flex bg-light p-3 rounded h-100">
+                    <div class="flex-shrink-0 btn-square bg-secondary rounded-circle" style="width: 50px; height: 50px;">
+                        <i class="fa fa-envelope text-white"></i>
+                    </div>
+                    <div class="ms-3">
+                        <h4 class="text-primary h5">Email Us</h4>
+                        <a class="h6 mb-0" href="mailto:info@navsyncs.com" target="_blank">info@navsyncs.com</a>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        </section>
+        <!-- Contact End -->
+
+        <!-- Footer component -->  
+        <?php include 'includes/footer.php'; ?>
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-secondary btn-square rounded-circle back-to-top"><i class="fa fa-arrow-up text-white"></i></a>
+
+        
+        <!-- JavaScript Libraries -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+        <!-- Only load on pages that actually use includes -->
+        <script src="/js/includes.js" defer></script>
+
+    </body>
+
+</html>

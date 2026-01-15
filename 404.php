@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+    <meta charset="utf-8">
+    <title>NavSync Solutions | IT Services & Solutions for Homes and Businesses</title>
+
+        <!-- Meta Tags for better SEO -->
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="IT support, network infrastructure, security solutions, device support, IT service desk, business IT services, home technology solutions" name="keywords">
+        <meta content="NavSync Solutions delivers expert IT support and technology solutions tailored to homes and businesses. Our services include network infrastructure, security solutions, device support, and IT service desk." name="description">
+
+
+        <!-- Open Graph Meta Tags -->
+        <meta property="og:title" content="NavSync Solutions | IT Services & Solutions">
+        <meta property="og:description" content="Expert IT support for homes and businesses">
+        <meta property="og:image" content="img/og-image.jpg">
+        <meta property="og:url" content="https://www.navsyncs.com">
+        <meta property="og:type" content="website">
+
+        
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Saira:wght@500;600;700&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+
+                <!-- Favicon -->
+        <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+        <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    </head>
+     <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-C5NHSS3MST"></script>
+            <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-C5NHSS3MST');
+        </script>
+
+    <body>
+        <!-- Spinner Start -->
+        <div id="spinner" class="show position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" role="status"></div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Topbar Start -->
+        <div class="container-fluid bg-light py-2 d-none d-md-flex">
+            <div class="container">
+                <div class="d-flex justify-content-between topbar">
+                    <div class="top-info">
+                        <small class="me-3 text-primary"><a href="#"><i class="fas fa-map-marker-alt me-2 text-primary"></i></a>MaryLand USA</small>
+                        <small class="me-3 text-primary"><a href="#"><i class="fas fa-envelope me-2 text-primary"></i></a>services@navsyncs.com</small>
+                    </div>
+                    <div id="note" class="text-primary d-none d-xl-flex"><small>Expert IT Solutions for Homes and Businesses</small></div>
+
+                    <!--TOdo Create and Add social media handles in here -->
+                    <div class="top-link">
+                        <a href="" class="bg-light nav-fill btn btn-sm-square rounded-circle"><i class="fab fa-facebook-f text-primary"></i></a>
+                        <a href="" class="bg-light nav-fill btn btn-sm-square rounded-circle"><i class="fab fa-twitter text-primary"></i></a>
+                        <a href="" class="bg-light nav-fill btn btn-sm-square rounded-circle"><i class="fab fa-instagram text-primary"></i></a>
+                        <a href="" class="bg-light nav-fill btn btn-sm-square rounded-circle me-0"><i class="fab fa-linkedin-in text-primary"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Topbar End -->
+
+
+        <!-- 404 Start -->
+        <div class="container-fluid py-5 my-5 wow fadeIn" data-wow-delay="0.3s">
+            <div class="container text-center py-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <i class="bi bi-exclamation-triangle display-1 text-primary"></i>
+                        <h1 class="display-1">404</h1>
+                        <h1 class="mb-4">Page Not Found</h1>
+                        <p class="mb-4">We’re sorry, the page you have looked for does not exist in our website! Maybe go to our home page or try to use a search?</p>
+                        <a class="btn bg-primary rounded-pill py-3 px-5 text-white" href="index.php">Go Back To Home</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 404 End -->
+
+        
+        <!-- JavaScript Libraries -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
+
+</html>

@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>About Us | NavSync Solutions - IT Services & Solutions</title>
+
+  <!-- Meta Tags for better SEO -->
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="IT support, network infrastructure, security solutions, device support, IT service desk, business IT services, home technology solutions" name="keywords">
+  <meta content="Learn about NavSync Solutions - your trusted IT partner delivering reliable support, secure networks, and modern technology solutions for homes and businesses." name="description">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="About NavSync Solutions | IT Services & Solutions">
+  <meta property="og:description" content="Trusted IT partners delivering reliable support, secure networks, and modern technology solutions">
+  <meta property="og:image" content="img/og-image.jpg">
+  <meta property="og:image:alt" content="Navsync Solutions logo with symbolism of campus, and navigation">
+  <meta property="og:url" content="https://navsyncs.com/img/social-media-preview.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="NavSync Solutions">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://navsyncs.com/">
+  <meta name="robots" content="index, follow">
+
+  
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Saira:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icon Font Stylesheet -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Libraries Stylesheet -->
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- Favicon -->
+
+  <!-- 1️⃣ Modern browsers: scalable vector favicon -->
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+
+  <!-- 2️⃣ Fallback PNGs for legacy or strict-size browsers -->
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon_32x32.png.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon_16x16.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="img/favicon_48x48.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="img/favicon_64x64.png">
+  <link rel="icon" type="image/png" sizes="180x180" href="img/favicon_180x180.png">
+
+  <!-- 6️⃣ Theme color for mobile address bar (Android Chrome, Windows) -->
+  <meta name="theme-color" content="#0a74da">
+
+  <style>
+    /* Modern Design System */
+    html, body {
+      overflow-x: hidden;
+    }
+
+    :root {
+      --section-spacing: 5rem;
+      --card-radius: 16px;
+      --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    /* Hero Section */
+    .about-hero {
+      color: var(--bs-gray);
+      padding: 6rem 0 4rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .about-hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url('img/pattern.svg') center/cover;
+      opacity: 0.1;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    /* Section Styling */
+    .section-title {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      background: linear-gradient(135deg, var(--bs-primary), var(--bs-primary-dark));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .section-subtitle {
+      font-size: 1.2rem;
+      color: var(--bs-gray);
+      margin-bottom: 3rem;
+      max-width: 600px;
+    }
+
+    /* Modern Cards */
+    .modern-card {
+      background: var(--bs-white);
+      border-radius: var(--card-radius);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      border: 1px solid rgba(0, 0, 0, 0.05);
+      transition: var(--transition);
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .modern-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+    }
+
+    .card-image {
+      height: 200px;
+      background: var(--bs-primary-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: var(--transition);
+    }
+
+    .modern-card:hover .card-image img {
+      transform: scale(1.05);
+    }
+
+    .card-content {
+      padding: 2rem;
+    }
+
+    /* Service Areas */
+    .service-area {
+      background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+      border-radius: var(--card-radius);
+      padding: 2rem;
+      text-align: center;
+      transition: var(--transition);
+    }
+
+    .service-area:hover {
+      transform: translateY(-5px);
+      background: linear-gradient(135deg, var(--bs-primary-light) 0%, #e3f2fd 100%);
+    }
+
+    .area-icon {
+      font-size: 3rem;
+      color: var(--bs-primary);
+      margin-bottom: 1rem;
+    }
+
+    /* CTA Section */
+    .cta-section {
+      background: linear-gradient(135deg, var(--bs-secondary) 0%, var(--bs-secondary-dark) 100%);
+      color: var(--bs-white);
+      padding: 4rem 0;
+      margin: 1.5rem 0;
+    }
+
+    .cta-content {
+      text-align: center;
+    }
+
+    .cta-title {
+      font-size: 2.2rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    .cta-buttons {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 2rem;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      :root {
+        --section-spacing: 3rem;
+      }
+      
+      .section-title {
+        font-size: 2rem;
+      }
+      
+      .about-hero {
+        padding: 4rem 0 2rem;
+      }
+      
+      .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .stat-number {
+        font-size: 2.5rem;
+      }
+    }
+
+  </style>
+</head>
+
+        <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-C5NHSS3MST"></script>
+<script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-C5NHSS3MST');
+</script>
+
+<body style="overflow-x: hidden;">
+  <!-- Spinner Start -->
+  <div id="spinner" class="show position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div class="spinner-grow text-primary" role="status"></div>
+  </div>
+  <!-- Spinner End -->
+
+  <!-- Navbar component -->
+  <?php include 'includes/navbar.php'; ?>
+
+
+          <!-- Page Header -->
+          <div class="container-fluid page-header py-5">
+            <div class="container text-center py-5">
+              <h1 class="display-4 text-white mb-3 animated slideInDown">About Us</h1>
+              <nav aria-label="breadcrumb" class="animated slideInDown">
+                <ol class="breadcrumb justify-content-center mb-0">
+                  <li class="breadcrumb-item"><a class="text-white-50" href="index.php">Home</a></li>
+                  <li class="breadcrumb-item text-white active" aria-current="page">About Us</li>
+                </ol>
+              </nav>
+            </div>
+          </div>
+          <!-- Page Header End-->
+
+        <!-- Fact Start -->
+            <div class="container-fluid py-5 facts">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 wow fadeIn" data-wow-delay=".1s">
+                            <div class="d-flex counter">
+                                <h1 class="text-primary counter-value">100</h1>
+                                <h5 class="ms-4 text-white mt-1">Problems Solved for Our Clients</h5>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 wow fadeIn" data-wow-delay=".3s">
+                            <div class="d-flex counter">
+                                <h1 class="text-primary counter-value">24</h1>
+                                <h5 class="ms-4 text-white mt-1">Hour IT Support Availability</h5>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 wow fadeIn" data-wow-delay=".5s">
+                            <div class="d-flex counter">
+                                <h1 class="text-primary counter-value">98</h1>
+                                <h5 class="ms-4 text-white mt-1">% Client Satisfaction Rate</h5>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 wow fadeIn" data-wow-delay=".7s">
+                            <div class="d-flex counter">
+                                <h1 class="text-primary counter-value">1</h1>
+                                <h5 class="ms-5 text-white mt-1">Hour Average Response Time</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!--Fact End-->
+
+  <!-- Hero Section -->
+  <section class="about-hero">
+    <div class="container">
+      <div class="row align-items-center min-vh-50">
+        <div class="col-lg-8 hero-content">
+          <h1 class="display-4 text-primary  mb-4">Transforming Businesses Through Technology</h1>
+          <p class="lead mb-4 fs-5">
+            NavSync Solutions is your trusted IT partner, delivering reliable support, secure networks, 
+            and innovative technology solutions that drive business growth and operational excellence.
+          </p>
+          <div class="d-flex gap-3 flex-wrap">
+            <a href="contact.php" class="btn btn-outline-dark btn-lg px-4 py-3 rounded-pill fw-semibold">
+              <i class="fas fa-rocket me-2"></i>Start Your Project
+            </a>
+            <a href="services.php" class="btn btn-outline-dark btn-lg px-4 py-3 rounded-pill fw-semibold">
+              <i class="fas fa-play-circle me-2"></i>Our Services
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Our Story Section -->
+  <section class="py-5" style="padding-top: var(--section-spacing); padding-bottom: var(--section-spacing);">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <span class="text-primary fw-semibold">OUR STORY</span>
+          <h2 class="section-title">Building Trust Through Technology</h2>
+          <p class="section-subtitle">
+            Founded with a vision to make enterprise-grade IT solutions accessible to businesses of all sizes.
+          </p>
+          <div class="mb-4">
+            <p class="fs-6">
+              NavSync Solutions was born from a simple observation: small and medium businesses deserve 
+              the same level of IT expertise and reliability as large enterprises. Our journey began 
+              with a commitment to bridge this gap, providing comprehensive IT solutions that empower 
+              businesses to thrive in the digital age.
+            </p>
+            <p class="fs-6">
+              Today, we're proud to be the trusted technology partner for businesses across Maryland, 
+              Washington DC, and Virginia, delivering innovative solutions that drive growth, enhance 
+              security, and optimize operations.
+            </p>
+          </div>
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <div class="d-flex align-items-center">
+                <i class="fas fa-check-circle text-primary me-3 fs-5"></i>
+                <span>CompTIA Certified Team</span>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="d-flex align-items-center">
+                <i class="fas fa-check-circle text-primary me-3 fs-5"></i>
+                <span>24/7 Support Available</span>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="d-flex align-items-center">
+                <i class="fas fa-check-circle text-primary me-3 fs-5"></i>
+                <span>Proven Track Record</span>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="d-flex align-items-center">
+                <i class="fas fa-check-circle text-primary me-3 fs-5"></i>
+                <span>Customized Solutions</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="modern-card">
+            <div class="card-image">
+              <img src="img/carousel-2.jpg" alt="Our Team at Work" class="img-fluid">
+            </div>
+            <div class="card-content">
+              <h4 class="fw-semibold mb-3">Why Choose NavSync?</h4>
+              <p class="text-muted mb-0">
+                We combine technical expertise with business acumen to deliver solutions that 
+                not only work flawlessly but also drive tangible business results.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA Section -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <h2 class="cta-title text-light">Ready to Transform Your IT Infrastructure?</h2>
+        <p class="fs-5 opacity-90">
+          Let's discuss how NavSync Solutions can help your business achieve its technology goals.
+        </p>
+        <div class="cta-buttons">
+          <a href="contact.php" class="btn btn-light btn-lg px-5 py-3 rounded-pill fw-semibold">
+            <i class="fas fa-calendar-check me-2"></i>Schedule Consultation
+          </a>
+          <a href="tel:+19168189115" class="btn btn-outline-light btn-lg px-5 py-3 rounded-pill fw-semibold">
+            <i class="fas fa-phone me-2"></i>Call Now: (916) 818-9115
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer component -->  
+  <?php include 'includes/footer.php'; ?>
+
+  <!-- Back to Top -->
+  <a href="#" class="btn btn-secondary btn-square rounded-circle back-to-top">
+    <i class="fa fa-arrow-up text-white"></i>
+  </a>
+
+  <!-- JavaScript Libraries -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+  <!-- Template Javascript -->
+  <script src="js/main.js"></script>
+  <script src="js/includes.js" defer></script>
+</body>
+</html>
